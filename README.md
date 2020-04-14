@@ -20,7 +20,10 @@ The main focus of this study is seeing the overall grade for websites, the proto
 * **data_analysis**: Program to analyze results of scanning websites in bulk
 * **run_analysis.sh**: Bash script which runs the data_analysis on various optional arguments
 * **results/**: Directory which contains all results from running data_analysis
+* **TLS Presentation.pdf**: Presentation with all the relevant results
 
 ### TODO:
 * Merge add_geolocation into main tls_analysis functionality
 * Implement click CMD line interface in files where not present
+* Make the output files neater.....
+* Refine industry/sector classifications
