@@ -1,0 +1,22 @@
+#! /usr/bin/env python3
+
+import sys
+import pandas as pd
+import subprocess
+
+if len(sys.argv) < 2:
+    print('Usage: add_geolocation <csv file>')
+    exit()
+
+input_file = sys.argv[1]
+
+df = pd.read_csv(input_file)
+df['geoLocation'] = df['geoLocation'].astype('str')
+for index, row in df.iterrows():
+    host = row['host']
+    out = subprocess.Popen(['geoiplookup', host], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout, stderr = out.communicate()
+    country = stdout.decode('utf-8').split(': ')[1].rstrip()
+    df.at[index, "geoLocation"] = country
+
+df.to_csv(input_file, index=False)

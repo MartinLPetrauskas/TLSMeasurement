@@ -1,0 +1,235 @@
+#! /usr/bin/env python3
+
+import concurrent.futures
+import ssllabsscanner
+import time
+import sys
+import random
+import csv
+
+# Check to see if there is an input file, if none, exit program
+if len(sys.argv) < 3:
+    print('Usage: tls_analysis <input txt file> <output csv file>')
+    exit()
+
+# Read all the website URLs from the input file
+input_file = open(sys.argv[1], 'r')
+websites = input_file.readlines()
+websites_stripped = list(map(lambda url: url.rstrip(), websites))
+input_file.close()
+
+output_csv_filename = sys.argv[2]
+output_csv = open(output_csv_filename, 'w')
+fieldnames = ['host', 'rank', 'industry', 'geoLocation', 'ipAddress', 'grade', 'protocols', 'vulnBeast', 'supportsRc4', 'heartbleed', 'heartbeat', 'openSslCcs', 'openSSLLuckyMinus20', 'ticketbleed', 'bleichenbacher', 'zombiePoodle', 'goldenDoodle', 'zeroLengthPaddingOracle', 'sleepingPoodle', 'poodle', 'poodleTls', 'fallbackScsv', 'freak', 'logjam', 'drownVulnerable']
+writer = csv.DictWriter(output_csv, fieldnames=fieldnames)
+writer.writeheader()
+output_csv.close()
+
+# CSV FIELD NAMES:
+# - host
+# - rank
+# - industry (initially set to NA)
+# - geo-location (initially set to NA)
+# - ipAddress
+# - grade
+# - protocols
+# - vulnBeast
+# - supportsRc4
+# - heartbleed
+# - heartbeat
+# - openSslCcs
+# - openSSLLuckyMinus20
+# - ticketbleed
+# - bleichenbacher
+# - zombiePoodle
+# - goldenDoodle
+# - zeroLengthPaddingOracle
+# - sleepingPoodle
+# - poodle
+# - poodleTls
+# - fallbackScsv
+# - freak
+# - logjam
+# - drownVulnerable
+
+
+def scanning_func(url):
+    url_rank = url.split(',')
+    wait = random.randint(0, 60)
+    time.sleep(wait)
+    print('STARTING TLS SCAN FOR: ' + url_rank[1])
+    data = ssllabsscanner.newScan(url_rank[1])
+
+    if 'errors' in data.keys():
+        print(data)
+        a = scanning_func(url)
+        return a
+
+    try:
+        host = data['host']
+    except:
+        host = 'NA'
+    try:
+        rank = url_rank[0]
+    except:
+        rank = 'NA'
+    industry = 'NA'
+    geoLocation = 'NA'
+
+    try:
+        ipAddress = data['endpoints'][0]['ipAddress']
+    except:
+        ipAddress = 'NA'
+
+    try:
+        grade = data['endpoints'][0]['gradeTrustIgnored']
+    except:
+        grade = 'NA'
+
+    try:
+        protocols = data['endpoints'][0]['details']['protocols']
+    except:
+        protocols = 'NA'
+
+    try:
+        vulnBeast = data['endpoints'][0]['details']['vulnBeast']
+    except:
+        vulnBeast = 'NA'
+
+    try:
+        supportsRc4 = data['endpoints'][0]['details']['supportsRc4']
+    except:
+        supportsRc4 = 'NA'
+
+    try:
+        heartbleed = data['endpoints'][0]['details']['heartbleed']
+    except:
+        heartbleed = 'NA'
+
+    try:
+        heartbeat = data['endpoints'][0]['details']['heartbeat']
+    except:
+        heartbeat = 'NA'
+
+    try:
+        openSslCcs = data['endpoints'][0]['details']['openSslCcs']
+    except:
+        openSslCcs = 'NA'
+
+    try:
+        openSSLLuckyMinus20 = data['endpoints'][0]['details']['openSSLLuckyMinus20']
+    except:
+        openSSLLuckyMinus20 = 'NA'
+
+    try:
+        ticketbleed = data['endpoints'][0]['details']['ticketbleed']
+    except:
+        ticketbleed = 'NA'
+
+    try:
+        bleichenbacher = data['endpoints'][0]['details']['bleichenbacher']
+    except:
+        bleichenbacher = 'NA'
+
+    try:
+        zombiePoodle = data['endpoints'][0]['details']['zombiePoodle']
+    except:
+        zombiePoodle = 'NA'
+
+    try:
+        goldenDoodle = data['endpoints'][0]['details']['goldenDoodle']
+    except:
+        goldenDoodle = 'NA'
+
+    try:
+        zeroLengthPaddingOracle = data['endpoints'][0]['details']['zeroLengthPaddingOracle']
+    except:
+        zeroLengthPaddingOracle = 'NA'
+
+    try:
+        sleepingPoodle = data['endpoints'][0]['details']['sleepingPoodle']
+    except:
+        sleepingPoodle = 'NA'
+
+    try:
+        poodle = data['endpoints'][0]['details']['poodle']
+    except:
+        poodle = 'NA'
+
+    try:
+        poodleTls = data['endpoints'][0]['details']['poodleTls']
+    except:
+        poodleTls = 'NA'
+
+    try:
+        fallbackScsv = data['endpoints'][0]['details']['fallbackScsv']
+    except:
+        fallbackScsv = 'NA'
+
+    try:
+        freak = data['endpoints'][0]['details']['freak']
+    except:
+        freak = 'NA'
+
+    try:
+        logjam = data['endpoints'][0]['details']['logjam']
+    except:
+        logjam = 'NA'
+
+    try:
+        drownVulnerable = data['endpoints'][0]['details']['drownVulnerable']
+    except:
+        drownVulnerable = 'NA'
+
+
+
+    output_csv = open(output_csv_filename, 'a+')
+    writer = csv.DictWriter(output_csv, fieldnames=fieldnames)
+
+    csv_data = {
+        'host': host,
+        'rank': rank,
+        'industry': industry,
+        'geoLocation': geoLocation,
+        'ipAddress': ipAddress,
+        'grade': grade,
+        'protocols': protocols,
+        'vulnBeast': vulnBeast,
+        'supportsRc4': supportsRc4,
+        'heartbleed': heartbleed,
+        'heartbeat': heartbeat,
+        'openSslCcs': openSslCcs,
+        'openSSLLuckyMinus20': openSSLLuckyMinus20,
+        'ticketbleed': ticketbleed,
+        'bleichenbacher': bleichenbacher,
+        'zombiePoodle': zombiePoodle,
+        'goldenDoodle': goldenDoodle,
+        'zeroLengthPaddingOracle': zeroLengthPaddingOracle,
+        'sleepingPoodle': sleepingPoodle,
+        'poodle': poodle,
+        'poodleTls': poodleTls,
+        'fallbackScsv': fallbackScsv,
+        'freak': freak,
+        'logjam': logjam,
+        'drownVulnerable': drownVulnerable,
+    }
+
+    writer.writerow(csv_data)
+
+    url = data['host']
+    grade = data['endpoints'][0]['gradeTrustIgnored']
+    print('SCANNING COMPLETE')
+    final = url + ": " + grade
+    return final
+
+
+with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+    future_to_url = {executor.submit(scanning_func, url): url for url in websites_stripped}
+    for future in concurrent.futures.as_completed(future_to_url):
+        url = future_to_url[future]
+        try:
+            data = future.result()
+        except Exception as exc:
+            print('Exception has been thrown: ' + str(exc))
+        else:
+            print('RESULT: ' + data)
