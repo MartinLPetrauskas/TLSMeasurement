@@ -1,0 +1,2071 @@
+Results for TLS Analysis:
+Analysis run at: 2020-04-13 23:45:17.689484
+==========================================
+Logarithmic Analysis
+++++++++++++++++++++++++++++++++++++++++++
+RANKS 1-10:
+Number of URLs Analyzed: 10
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     8
+A     1
+A+    1
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 0, 'SSL v3.0': 0, 'TLS v1.0': 7, 'TLS v1.1': 7, 'TLS v1.2': 10, 'TLS v1.3': 5}
+Number of sites that support SSL: 0
+Number of sites that support TLS v1.0 or v1.1: 7
+Number of sites that support TLS: 10
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 0
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 5
+Number of sites that support max TLS v1.3: 5
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+Website: facebook.com supports at least one RC4 cipher suite
+Website: tmall.com supports at least one RC4 cipher suite
+Website: instagram.com supports at least one RC4 cipher suite
+++++++++++++++++++++++++++++++++++++++++++
+Number of vulnerable sites: 0
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    7
+True     3
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 30.0
+
+False    10
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    7
+True     3
+Name: heartbeat, dtype: int64
+
+1.0    10
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    10
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    10
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    10
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    10
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    10
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    10
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    10
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    10
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    10
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True    8
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    10
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    10
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    10
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+RANKS 11-100:
+Number of URLs Analyzed: 81
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     55
+A     15
+A+     7
+C      3
+F      1
+Name: grade, dtype: int64
+Website: apple.com, Grade: F
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+Website: baidu.com, supports SSL v3.0
+Website: 360.cn, supports SSL v3.0
+Website: weibo.com, supports SSL v3.0
+Website: realtor.com, supports SSL v3.0
+{'SSL v2.0': 0, 'SSL v3.0': 4, 'TLS v1.0': 56, 'TLS v1.1': 59, 'TLS v1.2': 81, 'TLS v1.3': 27}
+Number of sites that support SSL: 4
+Number of sites that support TLS v1.0 or v1.1: 59
+Number of sites that support TLS: 81
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 0
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 54
+Number of sites that support max TLS v1.3: 27
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+Website: apple.com is vulnerable to ZombiePoodle attack
+Website: baidu.com supports at least one RC4 cipher suite
+Website: live.com is vulnerable to downgrade attack
+Website: adobe.com supports at least one RC4 cipher suite
+Website: taobao.com supports at least one RC4 cipher suite
+Website: 360.cn is vulnerable to Poodle attack
+Website: bing.com is vulnerable to downgrade attack
+Website: fandom.com is vulnerable to downgrade attack
+Website: msn.com is vulnerable to downgrade attack
+Website: weibo.com supports at least one RC4 cipher suite
+Website: weibo.com is vulnerable to Poodle attack
+Website: skype.com is vulnerable to downgrade attack
+Website: office.com is vulnerable to downgrade attack
+Website: realtor.com supports at least one RC4 cipher suite
+Website: fbcdn.net supports at least one RC4 cipher suite
+Website: csdn.net supports at least one RC4 cipher suite
+Website: whatsapp.com supports at least one RC4 cipher suite
+++++++++++++++++++++++++++++++++++++++++++
+Number of vulnerable sites: 9
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    73
+True      8
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 9.87654
+
+False    81
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    68
+True     13
+Name: heartbeat, dtype: int64
+
+1.0    81
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    80
+-1.0     1
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    81
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    81
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    79
+-1.0     1
+ 3.0     1
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 1.23457
+
+ 1.0    80
+-1.0     1
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    80
+-1.0     1
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    80
+-1.0     1
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    79
+True      2
+Name: poodle, dtype: int64
+Percentage Vulnerable: 2.46914
+
+ 1.0    80
+-3.0     1
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     59
+False     6
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 7.40741
+
+False    81
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    81
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    81
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+RANKS 101-1000:
+Number of URLs Analyzed: 803
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     552
+A     151
+A+     69
+F      18
+C      11
+A-      2
+Name: grade, dtype: int64
+Website: ibm.com, Grade: F
+Website: samsung.com, Grade: F
+Website: myspace.com, Grade: F
+Website: cnblogs.com, Grade: F
+Website: daum.net, Grade: F
+Website: cbsnews.com, Grade: F
+Website: zdnet.com, Grade: F
+Website: abc.net.au, Grade: F
+Website: hicloud.com, Grade: F
+Website: cars.com, Grade: F
+Website: aboutads.info, Grade: F
+Website: youdao.com, Grade: F
+Website: fidelity.com, Grade: F
+Website: over-blog.com, Grade: F
+Website: usc.edu, Grade: F
+Website: harborfreight.com, Grade: F
+Website: imageshack.us, Grade: F
+Website: theglobeandmail.com, Grade: F
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+Website: zhanqi.tv, supports SSL v3.0
+Website: tribunnews.com, at best only supports TLS v1.0
+Website: tribunnews.com, supports SSL v3.0
+Website: sogou.com, supports SSL v3.0
+Website: hao123.com, supports SSL v3.0
+Website: so.com, supports SSL v3.0
+Website: soso.com, supports SSL v3.0
+Website: gome.com.cn, supports SSL v3.0
+Website: nbcnews.com, supports SSL v3.0
+Website: 51sole.com, supports SSL v3.0
+Website: cctv.com, supports SSL v3.0
+Website: ebaumsworld.com, supports SSL v3.0
+Website: toutiao.com, supports SSL v3.0
+Website: kinopoisk.ru, supports SSL v3.0
+Website: today.com, supports SSL v3.0
+Website: imageshack.us, supports SSL v3.0
+{'SSL v2.0': 0, 'SSL v3.0': 15, 'TLS v1.0': 490, 'TLS v1.1': 554, 'TLS v1.2': 802, 'TLS v1.3': 229}
+Number of sites that support SSL: 15
+Number of sites that support TLS v1.0 or v1.1: 557
+Number of sites that support TLS: 803
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 1
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 573
+Number of sites that support max TLS v1.3: 229
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+Website: zhanqi.tv is vulnerable to Poodle attack
+Website: tribunnews.com supports at least one RC4 cipher suite
+Website: tribunnews.com is vulnerable to openSSLccs (CVE-2014-0224)
+Website: tribunnews.com is vulnerable to Poodle attack
+Website: ibm.com is vulnerable to 0-lengthPaddingOracle attack
+Website: sogou.com supports at least one RC4 cipher suite
+Website: sogou.com is vulnerable to Poodle attack
+Website: samsung.com is vulnerable to ROBOT attack
+Website: hao123.com supports at least one RC4 cipher suite
+Website: so.com supports at least one RC4 cipher suite
+Website: so.com is vulnerable to Poodle attack
+Website: 1688.com supports at least one RC4 cipher suite
+Website: myspace.com is vulnerable to ZombiePoodle attack
+Website: soso.com supports at least one RC4 cipher suite
+Website: soso.com is vulnerable to Poodle attack
+Website: uol.com.br supports at least one RC4 cipher suite
+Website: w3schools.com supports at least one RC4 cipher suite
+Website: cnblogs.com is vulnerable to ROBOT attack
+Website: daum.net is vulnerable to ZombiePoodle attack
+Website: cbsnews.com is vulnerable to ZombiePoodle attack
+Website: gome.com.cn is vulnerable to Poodle attack
+Website: fb.com supports at least one RC4 cipher suite
+Website: nbcnews.com supports at least one RC4 cipher suite
+Website: zdnet.com is vulnerable to ZombiePoodle attack
+Website: messenger.com supports at least one RC4 cipher suite
+Website: whatsapp.net supports at least one RC4 cipher suite
+Website: abc.net.au is vulnerable to ZombiePoodle attack
+Website: hicloud.com is vulnerable to ROBOT attack
+Website: scol.com.cn supports at least one RC4 cipher suite
+Website: cars.com is vulnerable to ROBOT attack
+Website: ucla.edu supports at least one RC4 cipher suite
+Website: aboutads.info is vulnerable to 0-lengthPaddingOracle attack
+Website: youdao.com supports at least one RC4 cipher suite
+Website: 51sole.com supports at least one RC4 cipher suite
+Website: 51sole.com is vulnerable to Poodle attack
+Website: over-blog.com is vulnerable to DROWN attack
+Website: cctv.com supports at least one RC4 cipher suite
+Website: ebaumsworld.com is vulnerable to Poodle attack
+Website: unity3d.com supports at least one RC4 cipher suite
+Website: thefreedictionary.com supports at least one RC4 cipher suite
+Website: wa.me supports at least one RC4 cipher suite
+Website: fb.me supports at least one RC4 cipher suite
+Website: usc.edu is vulnerable to ROBOT attack
+Website: fbsbx.com supports at least one RC4 cipher suite
+Website: kinopoisk.ru supports at least one RC4 cipher suite
+Website: kinopoisk.ru is vulnerable to Poodle attack
+Website: today.com supports at least one RC4 cipher suite
+Website: today.com is vulnerable to Poodle attack
+Website: harborfreight.com is vulnerable to ZombiePoodle attack
+Website: harborfreight.com is vulnerable to GoldenDoodle attack
+Website: harborfreight.com is vulnerable to 0-lengthPaddingOracle attack
+Website: imageshack.us is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: imageshack.us is vulnerable to Poodle attack
+Website: theglobeandmail.com is vulnerable to ROBOT attack
+++++++++++++++++++++++++++++++++++++++++++
+Number of vulnerable sites: 26
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    779
+True      24
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 2.98879
+
+False    803
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    662
+True     141
+Name: heartbeat, dtype: int64
+
+ 1.0    800
+-1.0      2
+ 2.0      1
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.12453
+
+ 1.0    784
+-1.0     18
+ 2.0      1
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.12453
+
+1.0    803
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    792
+4.0      5
+3.0      3
+2.0      3
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.7472
+
+ 1.0    723
+-1.0     74
+ 3.0      6
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.7472
+
+ 1.0    728
+-1.0     74
+ 5.0      1
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.12453
+
+ 1.0    726
+-1.0     74
+ 6.0      2
+ 7.0      1
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.3736
+
+ 1.0    729
+-1.0     74
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    792
+True      11
+Name: poodle, dtype: int64
+Percentage Vulnerable: 1.36986
+
+ 1.0    800
+-3.0      3
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    612
+0.0     15
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    803
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    803
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    802
+True       1
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.12453
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+RANKS 1001-10000:
+Number of URLs Analyzed: 7528
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     5203
+A     1447
+A+     473
+F      258
+C      137
+A-      10
+Name: grade, dtype: int64
+Website: irctc.co.in, Grade: F
+Website: cnnindonesia.com, Grade: F
+Website: zol.com.cn, Grade: F
+Website: foodnetwork.com, Grade: F
+Website: last.fm, Grade: F
+Website: worthpoint.com, Grade: F
+Website: nintendo.com, Grade: F
+Website: maxpreps.com, Grade: F
+Website: texas.gov, Grade: F
+Website: me.com, Grade: F
+Website: news18.com, Grade: F
+Website: nyc.gov, Grade: F
+Website: verizonwireless.com, Grade: F
+Website: haofang.net, Grade: F
+Website: 360doc.com, Grade: F
+Website: gmu.edu, Grade: F
+Website: neimanmarcus.com, Grade: F
+Website: iyiou.com, Grade: F
+Website: tribalfusion.com, Grade: F
+Website: upi.com, Grade: F
+Website: redbull.com, Grade: F
+Website: makemytrip.com, Grade: F
+Website: tiny.cc, Grade: F
+Website: gamersky.com, Grade: F
+Website: weibo.cn, Grade: F
+Website: techrepublic.com, Grade: F
+Website: hgtv.com, Grade: F
+Website: subway.com, Grade: F
+Website: tvguide.com, Grade: F
+Website: nifty.com, Grade: F
+Website: realclearpolitics.com, Grade: F
+Website: motorola.com, Grade: F
+Website: 4399.com, Grade: F
+Website: tributes.com, Grade: F
+Website: huaban.com, Grade: F
+Website: academy.com, Grade: F
+Website: argaam.com, Grade: F
+Website: yna.co.kr, Grade: F
+Website: 3m.com, Grade: F
+Website: stripes.com, Grade: F
+Website: freejobalert.com, Grade: F
+Website: cafe24.com, Grade: F
+Website: diigo.com, Grade: F
+Website: haaretz.com, Grade: F
+Website: carmax.com, Grade: F
+Website: imageshack.com, Grade: F
+Website: duba.com, Grade: F
+Website: fang.com, Grade: F
+Website: samsclub.com, Grade: F
+Website: serverwatch.com, Grade: F
+Website: dummies.com, Grade: F
+Website: 51cto.com, Grade: F
+Website: cargocollective.com, Grade: F
+Website: ku.edu, Grade: F
+Website: diynetwork.com, Grade: F
+Website: acuityplatform.com, Grade: F
+Website: thepaper.cn, Grade: F
+Website: sina.com, Grade: F
+Website: kizlarsoruyor.com, Grade: F
+Website: experian.com, Grade: F
+Website: huim.com, Grade: F
+Website: commondreams.org, Grade: F
+Website: zmenu.com, Grade: F
+Website: baixing.com, Grade: F
+Website: unt.edu, Grade: F
+Website: chanel.com, Grade: F
+Website: firstpost.com, Grade: F
+Website: lazada.com.ph, Grade: F
+Website: vivoglobal.com, Grade: F
+Website: suning.com, Grade: F
+Website: liberation.fr, Grade: F
+Website: iliangcang.com, Grade: F
+Website: vecteezy.com, Grade: F
+Website: 189.cn, Grade: F
+Website: fliphtml5.com, Grade: F
+Website: ky.gov, Grade: F
+Website: mihanblog.com, Grade: F
+Website: case.edu, Grade: F
+Website: caliente.mx, Grade: F
+Website: colorado.gov, Grade: F
+Website: kia.com, Grade: F
+Website: download.com, Grade: F
+Website: chinanews.com.cn, Grade: F
+Website: doc88.com, Grade: F
+Website: rsalchk.com, Grade: F
+Website: vivo.com.cn, Grade: F
+Website: lordandtaylor.com, Grade: F
+Website: webopedia.com, Grade: F
+Website: radikal.ru, Grade: F
+Website: itunes.com, Grade: F
+Website: beatport.com, Grade: F
+Website: ameli.fr, Grade: F
+Website: lanzous.com, Grade: F
+Website: xgo.com.cn, Grade: F
+Website: meizu.com, Grade: F
+Website: hotpepper.jp, Grade: F
+Website: dahe.cn, Grade: F
+Website: xsrv.jp, Grade: F
+Website: eol.cn, Grade: F
+Website: saksfifthavenue.com, Grade: F
+Website: plala.or.jp, Grade: F
+Website: etnet.com.hk, Grade: F
+Website: lockerdome.com, Grade: F
+Website: chowhound.com, Grade: F
+Website: foodnetwork.co.uk, Grade: F
+Website: meb.gov.tr, Grade: F
+Website: enorth.com.cn, Grade: F
+Website: amnh.org, Grade: F
+Website: blibli.com, Grade: F
+Website: annals.org, Grade: F
+Website: rai.it, Grade: F
+Website: no-ip.org, Grade: F
+Website: miaopai.com, Grade: F
+Website: eweek.com, Grade: F
+Website: japantoday.com, Grade: F
+Website: rotita.com, Grade: F
+Website: interpark.com, Grade: F
+Website: raiplay.it, Grade: F
+Website: wto168.net, Grade: F
+Website: winbank.gr, Grade: F
+Website: byjus.com, Grade: F
+Website: 9978.cn, Grade: F
+Website: cnwnews.com, Grade: F
+Website: suumo.jp, Grade: F
+Website: twitlonger.com, Grade: F
+Website: sho.com, Grade: F
+Website: dnaindia.com, Grade: F
+Website: frys.com, Grade: F
+Website: kontan.co.id, Grade: F
+Website: lianjia.com, Grade: F
+Website: insertlive.com, Grade: F
+Website: ofweek.com, Grade: F
+Website: belkin.com, Grade: F
+Website: globalsecurity.org, Grade: F
+Website: anz.com, Grade: F
+Website: topshop.com, Grade: F
+Website: connexity.net, Grade: F
+Website: hankyung.com, Grade: F
+Website: betfair.com, Grade: F
+Website: macmillan.com, Grade: F
+Website: microchip.com, Grade: F
+Website: xm.com, Grade: F
+Website: tmtpost.com, Grade: F
+Website: walmart.ca, Grade: F
+Website: fanpop.com, Grade: F
+Website: linksys.com, Grade: F
+Website: yicai.com, Grade: F
+Website: huxiu.com, Grade: F
+Website: westpac.com.au, Grade: F
+Website: etonline.com, Grade: F
+Website: zennioptical.com, Grade: F
+Website: celebritynetworth.com, Grade: F
+Website: rt.ru, Grade: F
+Website: lawtime.cn, Grade: F
+Website: gst.gov.in, Grade: F
+Website: webgains.com, Grade: F
+Website: hyundaiusa.com, Grade: F
+Website: scu.edu, Grade: F
+Website: zap2it.com, Grade: F
+Website: cloudblue.com, Grade: F
+Website: shoes.com, Grade: F
+Website: credit-suisse.com, Grade: F
+Website: 66law.cn, Grade: F
+Website: jiji.com, Grade: F
+Website: samsungelectronics.com, Grade: F
+Website: cnr.it, Grade: F
+Website: mbalib.com, Grade: F
+Website: anquan.org, Grade: F
+Website: trip.com, Grade: F
+Website: post.ir, Grade: F
+Website: yonhapnews.co.kr, Grade: F
+Website: cac.gov.cn, Grade: F
+Website: thenest.com, Grade: F
+Website: hover.com, Grade: F
+Website: c2.com, Grade: F
+Website: local.com, Grade: F
+Website: arbys.com, Grade: F
+Website: hiido.com, Grade: F
+Website: bignox.com, Grade: F
+Website: vzw.com, Grade: F
+Website: 07073.com, Grade: F
+Website: avon.com, Grade: F
+Website: vivo.com, Grade: F
+Website: mozdev.org, Grade: F
+Website: gov.ao, Grade: F
+Website: tsite.jp, Grade: F
+Website: flavors.me, Grade: F
+Website: wellnessmama.com, Grade: F
+Website: upsc.gov.in, Grade: F
+Website: omnihotels.com, Grade: F
+Website: v-mate.mobi, Grade: F
+Website: tsn.ua, Grade: F
+Website: jc001.cn, Grade: F
+Website: lfstmedia.com, Grade: F
+Website: bgsu.edu, Grade: F
+Website: cssmoban.com, Grade: F
+Website: takepart.com, Grade: F
+Website: no-ip.com, Grade: F
+Website: newsmemory.com, Grade: F
+Website: ntv.co.jp, Grade: F
+Website: powernationtv.com, Grade: F
+Website: yes24.com, Grade: F
+Website: toluna.com, Grade: F
+Website: open.edu, Grade: F
+Website: llnl.gov, Grade: F
+Website: sdo.com, Grade: F
+Website: anz.com.au, Grade: F
+Website: pornhat.com, Grade: F
+Website: writtingessays.com, Grade: F
+Website: 35.com, Grade: F
+Website: travelchannel.com, Grade: F
+Website: unjs.com, Grade: F
+Website: tmon.co.kr, Grade: F
+Website: sleepnumber.com, Grade: F
+Website: xhby.net, Grade: F
+Website: helpstart.co.kr, Grade: F
+Website: mediav.com, Grade: F
+Website: tianyancha.com, Grade: F
+Website: filefactory.com, Grade: F
+Website: netspend.com, Grade: F
+Website: cityheaven.net, Grade: F
+Website: 263.net, Grade: F
+Website: tritondigital.com, Grade: F
+Website: car.com, Grade: F
+Website: weiyangx.com, Grade: F
+Website: bobibanking.com, Grade: F
+Website: lodz.pl, Grade: F
+Website: pornolab.net, Grade: F
+Website: gingersoftware.com, Grade: F
+Website: index-education.net, Grade: F
+Website: hometax.go.kr, Grade: F
+Website: fpl.com, Grade: F
+Website: benchmarkemail.com, Grade: F
+Website: dominionenergy.com, Grade: F
+Website: elblog.com, Grade: F
+Website: insideedition.com, Grade: F
+Website: rosreestr.ru, Grade: F
+Website: myzaker.com, Grade: F
+Website: ifensi.com, Grade: F
+Website: gtarcade.com, Grade: F
+Website: gomlab.com, Grade: F
+Website: donews.com, Grade: F
+Website: etihad.com, Grade: F
+Website: keywordblocks.com, Grade: F
+Website: sportsline.com, Grade: F
+Website: copyscape.com, Grade: F
+Website: score.org, Grade: F
+Website: tju.edu.cn, Grade: F
+Website: sandai.net, Grade: F
+Website: qlwb.com.cn, Grade: F
+Website: rsalcau.com, Grade: F
+Website: torrent-igruha.org, Grade: F
+Website: rabbitpre.com, Grade: F
+Website: usal.es, Grade: F
+Website: saksoff5th.com, Grade: F
+Website: afi-b.com, Grade: F
+Website: www.edu.cn, Grade: F
+Website: sutterhealth.org, Grade: F
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+Website: lg.com, supports SSL v3.0
+Website: cntv.cn, supports SSL v3.0
+Website: cnki.net, supports SSL v3.0
+Website: technologyreview.com, supports SSL v3.0
+Website: utorrent.com, supports SSL v3.0
+Website: sitescout.com, supports SSL v3.0
+Website: dmm.co.jp, supports SSL v3.0
+Website: jamanetwork.com, supports SSL v3.0
+Website: news18.com, supports SSL v3.0
+Website: nyc.gov, at best only supports TLS v1.0
+Website: nyc.gov, supports SSL v3.0
+Website: greenpeace.org, supports SSL v3.0
+Website: caltech.edu, supports SSL v3.0
+Website: ivi.ru, supports SSL v3.0
+Website: tribalfusion.com, supports SSL v3.0
+Website: tiny.cc, supports SSL v3.0
+Website: gamersky.com, at best only supports TLS v1.0
+Website: gamersky.com, supports SSL v2.0
+Website: gamersky.com, supports SSL v3.0
+Website: byu.edu, supports SSL v3.0
+Website: ucweb.com, supports SSL v3.0
+Website: dmm.com, supports SSL v3.0
+Website: subway.com, supports SSL v3.0
+Website: 360.com, supports SSL v3.0
+Website: realclearpolitics.com, at best only supports TLS v1.0
+Website: realclearpolitics.com, supports SSL v3.0
+Website: usf.edu, supports SSL v3.0
+Website: pconline.com.cn, supports SSL v3.0
+Website: nd.edu, supports SSL v3.0
+Website: lovetoknow.com, supports SSL v3.0
+Website: americanthinker.com, supports SSL v3.0
+Website: argaam.com, at best only supports TLS v1.0
+Website: argaam.com, supports SSL v2.0
+Website: argaam.com, supports SSL v3.0
+Website: snssdk.com, supports SSL v3.0
+Website: pcbaby.com.cn, supports SSL v3.0
+Website: uc.cn, supports SSL v3.0
+Website: mass.gov, at best only supports TLS v1.0
+Website: yna.co.kr, supports SSL v3.0
+Website: zhibo8.cc, supports SSL v3.0
+Website: stripes.com, supports SSL v2.0
+Website: stripes.com, supports SSL v3.0
+Website: pearson.com, supports SSL v3.0
+Website: freejobalert.com, at best only supports TLS v1.0
+Website: freejobalert.com, supports SSL v3.0
+Website: correios.com.br, supports SSL v3.0
+Website: haaretz.com, supports SSL v3.0
+Website: carmax.com, supports SSL v3.0
+Website: imageshack.com, supports SSL v3.0
+Website: business-standard.com, supports SSL v3.0
+Website: fudan.edu.cn, supports SSL v3.0
+Website: calculator.net, supports SSL v3.0
+Website: safedog.cn, at best only supports TLS v1.0
+Website: safedog.cn, supports SSL v3.0
+Website: modsecurity.org, at best only supports TLS v1.0
+Website: gogoanime.io, supports SSL v3.0
+Website: acuityplatform.com, supports SSL v3.0
+Website: aastocks.com, supports SSL v3.0
+Website: huim.com, at best only supports TLS v1.0
+Website: huim.com, supports SSL v2.0
+Website: huim.com, supports SSL v3.0
+Website: bdimg.com, supports SSL v3.0
+Website: zmenu.com, at best only supports TLS v1.0
+Website: zmenu.com, supports SSL v2.0
+Website: zmenu.com, supports SSL v3.0
+Website: cmoney.tw, supports SSL v3.0
+Website: 12371.cn, supports SSL v3.0
+Website: firstpost.com, supports SSL v3.0
+Website: shoecarnival.com, supports SSL v3.0
+Website: thethao247.vn, supports SSL v3.0
+Website: flyfrontier.com, supports SSL v3.0
+Website: bittorrent.com, supports SSL v3.0
+Website: iliangcang.com, supports SSL v3.0
+Website: 189.cn, supports SSL v3.0
+Website: fliphtml5.com, at best only supports TLS v1.0
+Website: fliphtml5.com, supports SSL v3.0
+Website: ky.gov, at best only supports TLS v1.0
+Website: mikecrm.com, supports SSL v3.0
+Website: mihanblog.com, at best only supports TLS v1.0
+Website: mihanblog.com, supports SSL v3.0
+Website: kq36.com, supports SSL v3.0
+Website: haosou.com, supports SSL v3.0
+Website: jal.co.jp, supports SSL v3.0
+Website: newser.com, supports SSL v3.0
+Website: zoosnet.net, supports SSL v3.0
+Website: chinanews.com.cn, supports SSL v3.0
+Website: rsalchk.com, supports SSL v3.0
+Website: jjwxc.net, supports SSL v3.0
+Website: extend.tv, supports SSL v3.0
+Website: deepintent.com, supports SSL v3.0
+Website: whu.edu.cn, supports SSL v3.0
+Website: bdstatic.com, supports SSL v3.0
+Website: radikal.ru, supports SSL v2.0
+Website: radikal.ru, supports SSL v3.0
+Website: ernet.in, supports SSL v3.0
+Website: finviz.com, supports SSL v3.0
+Website: iea.org, supports SSL v3.0
+Website: mapsofworld.com, supports SSL v3.0
+Website: hostelworld.com, supports SSL v3.0
+Website: thermofisher.com, supports SSL v3.0
+Website: creditcards.com, supports SSL v3.0
+Website: gencat.cat, at best only supports TLS v1.0
+Website: maribacaberita.com, supports SSL v3.0
+Website: hrloo.com, supports SSL v3.0
+Website: imagebam.com, supports SSL v3.0
+Website: xsrv.jp, at best only supports TLS v1.0
+Website: livetv.sx, supports SSL v3.0
+Website: qunar.com, supports SSL v3.0
+Website: lockerdome.com, supports SSL v2.0
+Website: lockerdome.com, supports SSL v3.0
+Website: cnhubei.com, at best only supports TLS v1.0
+Website: meb.gov.tr, supports SSL v3.0
+Website: rediffmailpro.com, supports SSL v3.0
+Website: annals.org, supports SSL v3.0
+Website: miaopai.com, supports SSL v3.0
+Website: skycn.com, supports SSL v3.0
+Website: 11467.com, supports SSL v3.0
+Website: cofeed.com, supports SSL v3.0
+Website: lge.com, supports SSL v3.0
+Website: wto168.net, at best only supports TLS v1.0
+Website: wto168.net, supports SSL v2.0
+Website: wto168.net, supports SSL v3.0
+Website: winamp.com, supports SSL v3.0
+Website: dwz.cn, supports SSL v3.0
+Website: suumo.jp, supports SSL v3.0
+Website: cnfol.com, supports SSL v3.0
+Website: chinaacc.com, supports SSL v3.0
+Website: montana.edu, supports SSL v3.0
+Website: jeep.com, at best only supports TLS v1.0
+Website: exeter.ac.uk, supports SSL v3.0
+Website: dnaindia.com, supports SSL v3.0
+Website: sz.gov.cn, supports SSL v3.0
+Website: lianjia.com, supports SSL v3.0
+Website: dowjones.com, at best only supports TLS v1.0
+Website: nuomi.com, supports SSL v3.0
+Website: flagcounter.com, supports SSL v3.0
+Website: ofweek.com, at best only supports TLS v1.0
+Website: ofweek.com, supports SSL v3.0
+Website: globalsecurity.org, at best only supports TLS v1.0
+Website: globalsecurity.org, supports SSL v3.0
+Website: connexity.net, supports SSL v3.0
+Website: hankyung.com, supports SSL v3.0
+Website: repec.org, supports SSL v3.0
+Website: pcauto.com.cn, supports SSL v3.0
+Website: macmillan.com, supports SSL v2.0
+Website: macmillan.com, supports SSL v3.0
+Website: soufun.com, supports SSL v3.0
+Website: fanpop.com, supports SSL v3.0
+Website: reson8.com, supports SSL v3.0
+Website: cnki.com.cn, supports SSL v3.0
+Website: scu.edu, supports SSL v3.0
+Website: xueqiu.com, supports SSL v3.0
+Website: zap2it.com, supports SSL v3.0
+Website: dslreports.com, supports SSL v3.0
+Website: imgbox.com, supports SSL v3.0
+Website: creaders.net, supports SSL v3.0
+Website: trip.com, supports SSL v3.0
+Website: dunyanews.tv, supports SSL v3.0
+Website: flippingbook.com, supports SSL v3.0
+Website: thenest.com, supports SSL v3.0
+Website: c2.com, at best only supports TLS v1.0
+Website: baiducontent.com, supports SSL v3.0
+Website: hiido.com, supports SSL v3.0
+Website: 07073.com, supports SSL v3.0
+Website: mozdev.org, at best only supports TLS v1.0
+Website: likesite.xyz, supports SSL v3.0
+Website: kuwo.cn, supports SSL v3.0
+Website: rafflecopter.com, supports SSL v3.0
+Website: manuscriptcentral.com, supports SSL v3.0
+Website: flavors.me, at best only supports TLS v1.0
+Website: flavors.me, supports SSL v3.0
+Website: rtings.com, supports SSL v3.0
+Website: book118.com, supports SSL v3.0
+Website: henan.gov.cn, supports SSL v3.0
+Website: mobileadtrading.com, supports SSL v3.0
+Website: dvdvideosoft.com, supports SSL v3.0
+Website: hktdc.com, supports SSL v3.0
+Website: imotors.com, supports SSL v3.0
+Website: fortinet.com, supports SSL v3.0
+Website: fengniao.com, supports SSL v3.0
+Website: elibrary.ru, supports SSL v3.0
+Website: skipthegames.com, supports SSL v3.0
+Website: perm.ru, at best only supports TLS v1.0
+Website: perm.ru, supports SSL v3.0
+Website: le.com, supports SSL v3.0
+Website: pornhat.com, supports SSL v3.0
+Website: jfdaily.com, supports SSL v3.0
+Website: chrysler.com, at best only supports TLS v1.0
+Website: xitek.com, at best only supports TLS v1.0
+Website: nwf.org, supports SSL v3.0
+Website: appgame.com, supports SSL v3.0
+Website: everymac.com, supports SSL v3.0
+Website: ecrater.com, supports SSL v3.0
+Website: pdf2jpg.net, supports SSL v3.0
+Website: ipsosinteractive.com, supports SSL v3.0
+Website: farpost.ru, supports SSL v3.0
+Website: ramtrucks.com, at best only supports TLS v1.0
+Website: outlookindia.com, supports SSL v3.0
+Website: cityheaven.net, supports SSL v3.0
+Website: 263.net, supports SSL v3.0
+Website: admin5.com, supports SSL v3.0
+Website: eftymarket.com, supports SSL v3.0
+Website: lodz.pl, at best only supports TLS v1.0
+Website: lodz.pl, supports SSL v2.0
+Website: lodz.pl, supports SSL v3.0
+Website: pornolab.net, supports SSL v3.0
+Website: agilent.com, at best only supports TLS v1.0
+Website: crsky.com, supports SSL v3.0
+Website: roomstogo.com, at best only supports TLS v1.1
+Website: hometax.go.kr, supports SSL v3.0
+Website: imtranslator.net, supports SSL v3.0
+Website: dodge.com, at best only supports TLS v1.0
+Website: taipeitimes.com, supports SSL v3.0
+Website: baidustatic.com, supports SSL v3.0
+Website: easychair.org, supports SSL v3.0
+Website: unal.edu.co, supports SSL v3.0
+Website: creighton.edu, supports SSL v3.0
+Website: keywordblocks.com, supports SSL v3.0
+Website: atptour.com, supports SSL v3.0
+Website: 1gb.ru, supports SSL v3.0
+Website: copyscape.com, supports SSL v2.0
+Website: copyscape.com, supports SSL v3.0
+Website: indexmundi.com, supports SSL v3.0
+Website: score.org, supports SSL v2.0
+Website: score.org, supports SSL v3.0
+Website: tju.edu.cn, supports SSL v2.0
+Website: tju.edu.cn, supports SSL v3.0
+Website: 123greetings.com, supports SSL v3.0
+Website: huangye88.com, supports SSL v3.0
+Website: mtholyoke.edu, at best only supports TLS v1.0
+Website: rsalcau.com, supports SSL v3.0
+Website: uodoo.com, supports SSL v3.0
+Website: tiexue.net, supports SSL v3.0
+Website: dinamalar.com, at best only supports TLS v1.0
+Website: torrent-igruha.org, supports SSL v3.0
+Website: unext.jp, at best only supports TLS v1.0
+Website: kompass.com, supports SSL v3.0
+Website: firstcry.com, supports SSL v3.0
+{'SSL v2.0': 13, 'SSL v3.0': 190, 'TLS v1.0': 4654, 'TLS v1.1': 5321, 'TLS v1.2': 7485, 'TLS v1.3': 2205}
+Number of sites that support SSL: 190
+Number of sites that support TLS v1.0 or v1.1: 5418
+Number of sites that support TLS: 7521
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 34
+Number of sites that support max TLS v1.1: 1
+Number of sites that support max TLS v1.2: 5281
+Number of sites that support max TLS v1.3: 2205
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+Website: hotmail.com is vulnerable to downgrade attack
+Website: cnnindonesia.com is vulnerable to ROBOT attack
+Website: bls.gov is vulnerable to downgrade attack
+Website: lg.com supports at least one RC4 cipher suite
+Website: lg.com is vulnerable to Poodle attack
+Website: zol.com.cn supports at least one RC4 cipher suite
+Website: zol.com.cn is vulnerable to ZombiePoodle attack
+Website: cntv.cn supports at least one RC4 cipher suite
+Website: ninisite.com supports at least one RC4 cipher suite
+Website: ninisite.com is vulnerable to downgrade attack
+Website: itu.int is vulnerable to downgrade attack
+Website: kaspersky.com is vulnerable to downgrade attack
+Website: cnki.net supports at least one RC4 cipher suite
+Website: cnki.net is vulnerable to Poodle attack
+Website: technologyreview.com supports at least one RC4 cipher suite
+Website: technologyreview.com is vulnerable to Poodle attack
+Website: gismeteo.ru supports at least one RC4 cipher suite
+Website: foodnetwork.com is vulnerable to ROBOT attack
+Website: enable-javascript.com is vulnerable to downgrade attack
+Website: last.fm is vulnerable to ZombiePoodle attack
+Website: sitescout.com supports at least one RC4 cipher suite
+Website: namasha.com supports at least one RC4 cipher suite
+Website: namasha.com is vulnerable to downgrade attack
+Website: worthpoint.com supports at least one RC4 cipher suite
+Website: nintendo.com is vulnerable to ROBOT attack
+Website: yandex.net supports at least one RC4 cipher suite
+Website: maxpreps.com is vulnerable to ZombiePoodle attack
+Website: mathrubhumi.com supports at least one RC4 cipher suite
+Website: dmm.co.jp is vulnerable to Poodle attack
+Website: jamanetwork.com is vulnerable to Poodle attack
+Website: shein.com supports at least one RC4 cipher suite
+Website: m.me supports at least one RC4 cipher suite
+Website: texas.gov is vulnerable to ROBOT attack
+Website: me.com is vulnerable to ZombiePoodle attack
+Website: cancer.org is vulnerable to downgrade attack
+Website: uptodown.com supports at least one RC4 cipher suite
+Website: news18.com is vulnerable to ZombiePoodle attack
+Website: news18.com is vulnerable to Poodle attack
+Website: nyc.gov supports at least one RC4 cipher suite
+Website: nyc.gov is vulnerable to downgrade attack
+Website: jamnews.com supports at least one RC4 cipher suite
+Website: jamnews.com is vulnerable to downgrade attack
+Website: rarbg.to supports at least one RC4 cipher suite
+Website: autotrader.com supports at least one RC4 cipher suite
+Website: verizonwireless.com is vulnerable to ZombiePoodle attack
+Website: catchpoint.com is vulnerable to downgrade attack
+Website: hawaii.edu supports at least one RC4 cipher suite
+Website: haofang.net supports at least one RC4 cipher suite
+Website: 360doc.com supports at least one RC4 cipher suite
+Website: kitco.com is vulnerable to downgrade attack
+Website: caltech.edu supports at least one RC4 cipher suite
+Website: caltech.edu is vulnerable to Poodle attack
+Website: ivi.ru is vulnerable to Poodle attack
+Website: gmu.edu is vulnerable to ROBOT attack
+Website: lww.com supports at least one RC4 cipher suite
+Website: csmonitor.com is vulnerable to downgrade attack
+Website: aaa.com is vulnerable to downgrade attack
+Website: iyiou.com is vulnerable to ROBOT attack
+Website: tribalfusion.com supports at least one RC4 cipher suite
+Website: tribalfusion.com is vulnerable to ROBOT attack
+Website: tribalfusion.com is vulnerable to GoldenDoodle attack
+Website: tribalfusion.com is vulnerable to 0-lengthPaddingOracle attack
+Website: tribalfusion.com is vulnerable to SleepingPoodle attack
+Website: tribalfusion.com is vulnerable to Poodle attack
+Website: tribalfusion.com is vulnerable to FREAK attack
+Website: upi.com is vulnerable to 0-lengthPaddingOracle attack
+Website: redbull.com is vulnerable to ZombiePoodle attack
+Website: makemytrip.com is vulnerable to ZombiePoodle attack
+Website: makemytrip.com is vulnerable to GoldenDoodle attack
+Website: makemytrip.com is vulnerable to 0-lengthPaddingOracle attack
+Website: tiny.cc is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: tiny.cc is vulnerable to Poodle attack
+Website: tiny.cc is vulnerable to downgrade attack
+Website: memurlar.net is vulnerable to downgrade attack
+Website: gamersky.com supports at least one RC4 cipher suite
+Website: gamersky.com is vulnerable to Poodle attack
+Website: gamersky.com is vulnerable to downgrade attack
+Website: law.com supports at least one RC4 cipher suite
+Website: weibo.cn is vulnerable to ROBOT attack
+Website: chinaz.com is vulnerable to downgrade attack
+Website: sophos.com is vulnerable to downgrade attack
+Website: frontiersin.org supports at least one RC4 cipher suite
+Website: brookings.edu is vulnerable to downgrade attack
+Website: techrepublic.com is vulnerable to ZombiePoodle attack
+Website: byu.edu supports at least one RC4 cipher suite
+Website: byu.edu is vulnerable to Poodle attack
+Website: ucweb.com is vulnerable to Poodle attack
+Website: hgtv.com is vulnerable to ROBOT attack
+Website: dmm.com is vulnerable to Poodle attack
+Website: adobelogin.com supports at least one RC4 cipher suite
+Website: subway.com is vulnerable to ROBOT attack
+Website: subway.com is vulnerable to Poodle attack
+Website: 1drv.ms is vulnerable to downgrade attack
+Website: 360.com is vulnerable to Poodle attack
+Website: tvguide.com is vulnerable to ZombiePoodle attack
+Website: interia.pl supports at least one RC4 cipher suite
+Website: biglots.com supports at least one RC4 cipher suite
+Website: nifty.com is vulnerable to ROBOT attack
+Website: realclearpolitics.com supports at least one RC4 cipher suite
+Website: realclearpolitics.com is vulnerable to Poodle attack
+Website: realclearpolitics.com is vulnerable to FREAK attack
+Website: usf.edu supports at least one RC4 cipher suite
+Website: usf.edu is vulnerable to Poodle attack
+Website: motorola.com supports at least one RC4 cipher suite
+Website: motorola.com is vulnerable to downgrade attack
+Website: motorola.com is vulnerable to FREAK attack
+Website: gmarket.co.kr is vulnerable to downgrade attack
+Website: 4399.com supports at least one RC4 cipher suite
+Website: 4399.com is vulnerable to FREAK attack
+Website: tributes.com supports at least one RC4 cipher suite
+Website: tributes.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: huaban.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: huaban.com is vulnerable to 0-lengthPaddingOracle attack
+Website: secureworks.com is vulnerable to downgrade attack
+Website: pconline.com.cn is vulnerable to Poodle attack
+Website: thestreet.com supports at least one RC4 cipher suite
+Website: lovetoknow.com supports at least one RC4 cipher suite
+Website: lovetoknow.com is vulnerable to Poodle attack
+Website: academy.com is vulnerable to ROBOT attack
+Website: gsu.edu supports at least one RC4 cipher suite
+Website: argaam.com supports at least one RC4 cipher suite
+Website: argaam.com is vulnerable to Poodle attack
+Website: argaam.com is vulnerable to downgrade attack
+Website: snssdk.com is vulnerable to Poodle attack
+Website: pcbaby.com.cn is vulnerable to Poodle attack
+Website: pastemagazine.com is vulnerable to downgrade attack
+Website: mydrivers.com is vulnerable to downgrade attack
+Website: uc.cn is vulnerable to Poodle attack
+Website: yadi.sk is vulnerable to downgrade attack
+Website: 126.com supports at least one RC4 cipher suite
+Website: 126.com supports at least one RC4 cipher suite
+Website: yna.co.kr supports at least one RC4 cipher suite
+Website: yna.co.kr is vulnerable to ROBOT attack
+Website: zhibo8.cc is vulnerable to Poodle attack
+Website: anu.edu.au supports at least one RC4 cipher suite
+Website: 51job.com supports at least one RC4 cipher suite
+Website: skysports.com supports at least one RC4 cipher suite
+Website: 3m.com is vulnerable to ZombiePoodle attack
+Website: cern.ch is vulnerable to downgrade attack
+Website: stripes.com supports at least one RC4 cipher suite
+Website: stripes.com is vulnerable to Poodle attack
+Website: stripes.com is vulnerable to downgrade attack
+Website: pearson.com supports at least one RC4 cipher suite
+Website: pearson.com is vulnerable to Poodle attack
+Website: freejobalert.com supports at least one RC4 cipher suite
+Website: freejobalert.com is vulnerable to openSSLccs (CVE-2014-0224)
+Website: freejobalert.com is vulnerable to Poodle attack
+Website: freejobalert.com is vulnerable to downgrade attack
+Website: correios.com.br is vulnerable to Poodle attack
+Website: cardinalcommerce.com is vulnerable to downgrade attack
+Website: cafe24.com is vulnerable to DROWN attack
+Website: diigo.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: haaretz.com supports at least one RC4 cipher suite
+Website: haaretz.com is vulnerable to Poodle attack
+Website: haaretz.com is vulnerable to FREAK attack
+Website: haaretz.com is vulnerable to logjam attack
+Website: carmax.com supports at least one RC4 cipher suite
+Website: carmax.com is vulnerable to FREAK attack
+Website: thestar.com.my supports at least one RC4 cipher suite
+Website: thestar.com.my is vulnerable to downgrade attack
+Website: supersonicads.com supports at least one RC4 cipher suite
+Website: covers.com supports at least one RC4 cipher suite
+Website: covers.com is vulnerable to downgrade attack
+Website: imageshack.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: imageshack.com is vulnerable to Poodle attack
+Website: business-standard.com supports at least one RC4 cipher suite
+Website: business-standard.com is vulnerable to Poodle attack
+Website: icbc.com.cn is vulnerable to downgrade attack
+Website: duba.com supports at least one RC4 cipher suite
+Website: duba.com is vulnerable to openSSLccs (CVE-2014-0224)
+Website: duba.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: duba.com is vulnerable to downgrade attack
+Website: duba.com is vulnerable to FREAK attack
+Website: oculus.com supports at least one RC4 cipher suite
+Website: adhigh.net supports at least one RC4 cipher suite
+Website: fang.com supports at least one RC4 cipher suite
+Website: fudan.edu.cn is vulnerable to Poodle attack
+Website: calculator.net supports at least one RC4 cipher suite
+Website: calculator.net is vulnerable to Poodle attack
+Website: safedog.cn is vulnerable to Poodle attack
+Website: codeproject.com is vulnerable to downgrade attack
+Website: samsclub.com is vulnerable to ZombiePoodle attack
+Website: serverwatch.com is vulnerable to ZombiePoodle attack
+Website: serverwatch.com is vulnerable to GoldenDoodle attack
+Website: serverwatch.com is vulnerable to 0-lengthPaddingOracle attack
+Website: modsecurity.org supports at least one RC4 cipher suite
+Website: miami.edu is vulnerable to downgrade attack
+Website: skyscanner.com supports at least one RC4 cipher suite
+Website: gogoanime.io is vulnerable to Poodle attack
+Website: kommersant.ru supports at least one RC4 cipher suite
+Website: kommersant.ru is vulnerable to downgrade attack
+Website: dummies.com is vulnerable to ROBOT attack
+Website: sonyliv.com supports at least one RC4 cipher suite
+Website: 51cto.com is vulnerable to ROBOT attack
+Website: w3school.com.cn supports at least one RC4 cipher suite
+Website: w3school.com.cn is vulnerable to downgrade attack
+Website: cargocollective.com is vulnerable to 0-lengthPaddingOracle attack
+Website: ku.edu is vulnerable to ZombiePoodle attack
+Website: diynetwork.com is vulnerable to ROBOT attack
+Website: acuityplatform.com supports at least one RC4 cipher suite
+Website: acuityplatform.com is vulnerable to Poodle attack
+Website: haberler.com supports at least one RC4 cipher suite
+Website: haberler.com is vulnerable to downgrade attack
+Website: aastocks.com supports at least one RC4 cipher suite
+Website: aastocks.com is vulnerable to Poodle attack
+Website: thepaper.cn is vulnerable to ROBOT attack
+Website: sina.com is vulnerable to DROWN attack
+Website: kizlarsoruyor.com is vulnerable to ZombiePoodle attack
+Website: experian.com is vulnerable to ZombiePoodle attack
+Website: experian.com is vulnerable to GoldenDoodle attack
+Website: experian.com is vulnerable to 0-lengthPaddingOracle attack
+Website: huim.com supports at least one RC4 cipher suite
+Website: huim.com is vulnerable to downgrade attack
+Website: tasnimnews.com is vulnerable to downgrade attack
+Website: voot.com supports at least one RC4 cipher suite
+Website: bdimg.com supports at least one RC4 cipher suite
+Website: airasia.com supports at least one RC4 cipher suite
+Website: kidshealth.org supports at least one RC4 cipher suite
+Website: emofid.com is vulnerable to downgrade attack
+Website: commondreams.org is vulnerable to 0-lengthPaddingOracle attack
+Website: ameba.jp supports at least one RC4 cipher suite
+Website: kpmg.com supports at least one RC4 cipher suite
+Website: kpmg.com is vulnerable to downgrade attack
+Website: hellomagazine.com supports at least one RC4 cipher suite
+Website: zmenu.com supports at least one RC4 cipher suite
+Website: zmenu.com is vulnerable to Poodle attack
+Website: cmoney.tw supports at least one RC4 cipher suite
+Website: cmoney.tw is vulnerable to Poodle attack
+Website: cmoney.tw is vulnerable to downgrade attack
+Website: distractify.com is vulnerable to downgrade attack
+Website: baixing.com is vulnerable to ROBOT attack
+Website: skyscanner.net supports at least one RC4 cipher suite
+Website: sc.edu supports at least one RC4 cipher suite
+Website: gnome.org supports at least one RC4 cipher suite
+Website: 12371.cn supports at least one RC4 cipher suite
+Website: qianlong.com supports at least one RC4 cipher suite
+Website: unt.edu is vulnerable to ROBOT attack
+Website: phoca.cz supports at least one RC4 cipher suite
+Website: queensu.ca is vulnerable to downgrade attack
+Website: nationalarchives.gov.uk is vulnerable to downgrade attack
+Website: chanel.com is vulnerable to ROBOT attack
+Website: firstpost.com is vulnerable to ZombiePoodle attack
+Website: firstpost.com is vulnerable to Poodle attack
+Website: lazada.com.ph is vulnerable to ROBOT attack
+Website: shoecarnival.com supports at least one RC4 cipher suite
+Website: shoecarnival.com is vulnerable to Poodle attack
+Website: vivoglobal.com is vulnerable to ROBOT attack
+Website: thethao247.vn supports at least one RC4 cipher suite
+Website: suning.com is vulnerable to ROBOT attack
+Website: uc.edu supports at least one RC4 cipher suite
+Website: liberation.fr is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: groupme.com is vulnerable to downgrade attack
+Website: flyfrontier.com supports at least one RC4 cipher suite
+Website: flyfrontier.com is vulnerable to Poodle attack
+Website: flyfrontier.com is vulnerable to downgrade attack
+Website: opentable.com supports at least one RC4 cipher suite
+Website: trustwave.com is vulnerable to downgrade attack
+Website: iliangcang.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: iliangcang.com is vulnerable to Poodle attack
+Website: vecteezy.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: szu.edu.cn is vulnerable to downgrade attack
+Website: 189.cn is vulnerable to ZombiePoodle attack
+Website: 189.cn is vulnerable to SleepingPoodle attack
+Website: 189.cn is vulnerable to Poodle attack
+Website: 189.cn is vulnerable to PoodleTLS attack
+Website: 189.cn is vulnerable to downgrade attack
+Website: fliphtml5.com supports at least one RC4 cipher suite
+Website: fliphtml5.com is vulnerable to Poodle attack
+Website: fliphtml5.com is vulnerable to FREAK attack
+Website: fliphtml5.com is vulnerable to logjam attack
+Website: foxitsoftware.com supports at least one RC4 cipher suite
+Website: subaru.com supports at least one RC4 cipher suite
+Website: starwoodhotels.com supports at least one RC4 cipher suite
+Website: mikecrm.com supports at least one RC4 cipher suite
+Website: mikecrm.com is vulnerable to Poodle attack
+Website: yammer.com is vulnerable to downgrade attack
+Website: mihanblog.com supports at least one RC4 cipher suite
+Website: mihanblog.com is vulnerable to Poodle attack
+Website: mihanblog.com is vulnerable to FREAK attack
+Website: case.edu is vulnerable to ROBOT attack
+Website: supersonic.com supports at least one RC4 cipher suite
+Website: kq36.com is vulnerable to Poodle attack
+Website: caliente.mx is vulnerable to 0-lengthPaddingOracle attack
+Website: colorado.gov is vulnerable to ZombiePoodle attack
+Website: haosou.com supports at least one RC4 cipher suite
+Website: haosou.com is vulnerable to Poodle attack
+Website: jal.co.jp supports at least one RC4 cipher suite
+Website: jal.co.jp is vulnerable to Poodle attack
+Website: kia.com is vulnerable to ZombiePoodle attack
+Website: kia.com is vulnerable to GoldenDoodle attack
+Website: kia.com is vulnerable to 0-lengthPaddingOracle attack
+Website: crutchfield.com is vulnerable to downgrade attack
+Website: accountkit.com supports at least one RC4 cipher suite
+Website: orientaltrading.com supports at least one RC4 cipher suite
+Website: emalls.ir supports at least one RC4 cipher suite
+Website: emalls.ir is vulnerable to downgrade attack
+Website: uptodate.com supports at least one RC4 cipher suite
+Website: newser.com supports at least one RC4 cipher suite
+Website: newser.com is vulnerable to Poodle attack
+Website: newser.com is vulnerable to downgrade attack
+Website: zoosnet.net supports at least one RC4 cipher suite
+Website: zoosnet.net is vulnerable to Poodle attack
+Website: zoosnet.net is vulnerable to downgrade attack
+Website: powerbi.com is vulnerable to downgrade attack
+Website: care2.com supports at least one RC4 cipher suite
+Website: download.com is vulnerable to ZombiePoodle attack
+Website: chinanews.com.cn supports at least one RC4 cipher suite
+Website: chinanews.com.cn is vulnerable to ROBOT attack
+Website: asm.org supports at least one RC4 cipher suite
+Website: asm.org is vulnerable to downgrade attack
+Website: bing.net is vulnerable to downgrade attack
+Website: doc88.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: doc88.com is vulnerable to 0-lengthPaddingOracle attack
+Website: parliament.uk supports at least one RC4 cipher suite
+Website: parliament.uk is vulnerable to downgrade attack
+Website: rsalchk.com supports at least one RC4 cipher suite
+Website: rsalchk.com is vulnerable to Poodle attack
+Website: dominos.com supports at least one RC4 cipher suite
+Website: jjwxc.net supports at least one RC4 cipher suite
+Website: jjwxc.net is vulnerable to Poodle attack
+Website: ilsole24ore.com supports at least one RC4 cipher suite
+Website: extend.tv supports at least one RC4 cipher suite
+Website: extend.tv is vulnerable to Poodle attack
+Website: deepintent.com supports at least one RC4 cipher suite
+Website: auburn.edu supports at least one RC4 cipher suite
+Website: mega.co.nz is vulnerable to downgrade attack
+Website: vivo.com.cn supports at least one RC4 cipher suite
+Website: whu.edu.cn is vulnerable to Poodle attack
+Website: bdstatic.com supports at least one RC4 cipher suite
+Website: aruba.it supports at least one RC4 cipher suite
+Website: aruba.it is vulnerable to downgrade attack
+Website: lordandtaylor.com is vulnerable to ROBOT attack
+Website: mediatek.com supports at least one RC4 cipher suite
+Website: colourlovers.com supports at least one RC4 cipher suite
+Website: koreastardaily.com supports at least one RC4 cipher suite
+Website: webopedia.com is vulnerable to ZombiePoodle attack
+Website: webopedia.com is vulnerable to GoldenDoodle attack
+Website: webopedia.com is vulnerable to 0-lengthPaddingOracle attack
+Website: radikal.ru supports at least one RC4 cipher suite
+Website: radikal.ru is vulnerable to downgrade attack
+Website: shaw.ca is vulnerable to downgrade attack
+Website: rae.es supports at least one RC4 cipher suite
+Website: ernet.in supports at least one RC4 cipher suite
+Website: ernet.in is vulnerable to Poodle attack
+Website: finviz.com supports at least one RC4 cipher suite
+Website: finviz.com is vulnerable to Poodle attack
+Website: finviz.com is vulnerable to downgrade attack
+Website: itunes.com is vulnerable to ZombiePoodle attack
+Website: duke-energy.com supports at least one RC4 cipher suite
+Website: jalbum.net supports at least one RC4 cipher suite
+Website: beatport.com is vulnerable to ZombiePoodle attack
+Website: beatport.com is vulnerable to GoldenDoodle attack
+Website: beatport.com is vulnerable to 0-lengthPaddingOracle attack
+Website: beatport.com is vulnerable to downgrade attack
+Website: iea.org supports at least one RC4 cipher suite
+Website: iea.org is vulnerable to Poodle attack
+Website: iea.org is vulnerable to downgrade attack
+Website: similarweb.com supports at least one RC4 cipher suite
+Website: mapsofworld.com supports at least one RC4 cipher suite
+Website: mapsofworld.com is vulnerable to Poodle attack
+Website: hostelworld.com is vulnerable to Poodle attack
+Website: thermofisher.com supports at least one RC4 cipher suite
+Website: westerndigital.com supports at least one RC4 cipher suite
+Website: westerndigital.com is vulnerable to downgrade attack
+Website: creditcards.com is vulnerable to Poodle attack
+Website: crosswordtracker.com supports at least one RC4 cipher suite
+Website: lanzous.com is vulnerable to ROBOT attack
+Website: xgo.com.cn is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: workplace.com supports at least one RC4 cipher suite
+Website: meizu.com is vulnerable to ROBOT attack
+Website: gencat.cat supports at least one RC4 cipher suite
+Website: gencat.cat is vulnerable to openSSLccs (CVE-2014-0224)
+Website: ad-stir.com supports at least one RC4 cipher suite
+Website: hotpepper.jp is vulnerable to ROBOT attack
+Website: sport.es supports at least one RC4 cipher suite
+Website: dahe.cn is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: dahe.cn is vulnerable to 0-lengthPaddingOracle attack
+Website: hrloo.com is vulnerable to Poodle attack
+Website: koreatimes.co.kr supports at least one RC4 cipher suite
+Website: koreatimes.co.kr is vulnerable to downgrade attack
+Website: imagebam.com supports at least one RC4 cipher suite
+Website: imagebam.com is vulnerable to Poodle attack
+Website: xsrv.jp supports at least one RC4 cipher suite
+Website: eol.cn is vulnerable to ROBOT attack
+Website: christianitytoday.com is vulnerable to downgrade attack
+Website: saksfifthavenue.com is vulnerable to ROBOT attack
+Website: plala.or.jp is vulnerable to ZombiePoodle attack
+Website: plala.or.jp is vulnerable to SleepingPoodle attack
+Website: plala.or.jp is vulnerable to PoodleTLS attack
+Website: plala.or.jp is vulnerable to downgrade attack
+Website: caixin.com supports at least one RC4 cipher suite
+Website: time.ir is vulnerable to downgrade attack
+Website: nami.org is vulnerable to downgrade attack
+Website: livetv.sx is vulnerable to Poodle attack
+Website: qunar.com is vulnerable to Poodle attack
+Website: etnet.com.hk is vulnerable to DROWN attack
+Website: lockerdome.com supports at least one RC4 cipher suite
+Website: lockerdome.com is vulnerable to openSSLccs (CVE-2014-0224)
+Website: lockerdome.com is vulnerable to Poodle attack
+Website: lockerdome.com is vulnerable to downgrade attack
+Website: chowhound.com is vulnerable to ZombiePoodle attack
+Website: foodnetwork.co.uk is vulnerable to ROBOT attack
+Website: cnhubei.com is vulnerable to openSSLccs (CVE-2014-0224)
+Website: meb.gov.tr is vulnerable to Poodle attack
+Website: fairmont.com is vulnerable to downgrade attack
+Website: bankcomm.com is vulnerable to downgrade attack
+Website: autozone.com supports at least one RC4 cipher suite
+Website: adkernel.com supports at least one RC4 cipher suite
+Website: amnh.org is vulnerable to ZombiePoodle attack
+Website: amnh.org is vulnerable to GoldenDoodle attack
+Website: amnh.org is vulnerable to 0-lengthPaddingOracle attack
+Website: blibli.com is vulnerable to ROBOT attack
+Website: rediffmailpro.com is vulnerable to Poodle attack
+Website: liu.se supports at least one RC4 cipher suite
+Website: annals.org is vulnerable to ZombiePoodle attack
+Website: annals.org is vulnerable to Poodle attack
+Website: rai.it is vulnerable to ZombiePoodle attack
+Website: rai.it is vulnerable to SleepingPoodle attack
+Website: rai.it is vulnerable to PoodleTLS attack
+Website: rai.it is vulnerable to downgrade attack
+Website: albany.edu supports at least one RC4 cipher suite
+Website: no-ip.org supports at least one RC4 cipher suite
+Website: no-ip.org is vulnerable to downgrade attack
+Website: thepetitionsite.com supports at least one RC4 cipher suite
+Website: miaopai.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: miaopai.com is vulnerable to Poodle attack
+Website: virtualearth.net is vulnerable to downgrade attack
+Website: wdc.com supports at least one RC4 cipher suite
+Website: pypi.org is vulnerable to downgrade attack
+Website: france.tv supports at least one RC4 cipher suite
+Website: gismeteo.ua supports at least one RC4 cipher suite
+Website: uwa.edu.au supports at least one RC4 cipher suite
+Website: eweek.com is vulnerable to ZombiePoodle attack
+Website: eweek.com is vulnerable to GoldenDoodle attack
+Website: eweek.com is vulnerable to 0-lengthPaddingOracle attack
+Website: europapress.es is vulnerable to downgrade attack
+Website: skycn.com supports at least one RC4 cipher suite
+Website: japantoday.com is vulnerable to 0-lengthPaddingOracle attack
+Website: gamepressure.com is vulnerable to downgrade attack
+Website: stlouisfed.org is vulnerable to downgrade attack
+Website: rotita.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: rotita.com is vulnerable to 0-lengthPaddingOracle attack
+Website: gh0089.com is vulnerable to downgrade attack
+Website: interpark.com is vulnerable to ZombiePoodle attack
+Website: interpark.com is vulnerable to downgrade attack
+Website: raiplay.it is vulnerable to ZombiePoodle attack
+Website: raiplay.it is vulnerable to SleepingPoodle attack
+Website: raiplay.it is vulnerable to PoodleTLS attack
+Website: raiplay.it is vulnerable to downgrade attack
+Website: healthychildren.org is vulnerable to downgrade attack
+Website: 11467.com supports at least one RC4 cipher suite
+Website: 11467.com is vulnerable to Poodle attack
+Website: 11467.com is vulnerable to downgrade attack
+Website: cofeed.com supports at least one RC4 cipher suite
+Website: cofeed.com is vulnerable to Poodle attack
+Website: cofeed.com is vulnerable to downgrade attack
+Website: chuandong.com supports at least one RC4 cipher suite
+Website: chuandong.com is vulnerable to downgrade attack
+Website: lge.com supports at least one RC4 cipher suite
+Website: lge.com is vulnerable to Poodle attack
+Website: finra.org supports at least one RC4 cipher suite
+Website: wto168.net supports at least one RC4 cipher suite
+Website: wto168.net is vulnerable to downgrade attack
+Website: winamp.com supports at least one RC4 cipher suite
+Website: winamp.com is vulnerable to Poodle attack
+Website: dwz.cn supports at least one RC4 cipher suite
+Website: winbank.gr is vulnerable to ZombiePoodle attack
+Website: winbank.gr is vulnerable to GoldenDoodle attack
+Website: winbank.gr is vulnerable to 0-lengthPaddingOracle attack
+Website: lublin.pl supports at least one RC4 cipher suite
+Website: ssc.nic.in is vulnerable to downgrade attack
+Website: byjus.com supports at least one RC4 cipher suite
+Website: sparkpeople.com supports at least one RC4 cipher suite
+Website: sparkpeople.com is vulnerable to downgrade attack
+Website: suumo.jp supports at least one RC4 cipher suite
+Website: suumo.jp is vulnerable to ROBOT attack
+Website: suumo.jp is vulnerable to Poodle attack
+Website: cnfol.com is vulnerable to Poodle attack
+Website: wisegeek.com supports at least one RC4 cipher suite
+Website: hola.com supports at least one RC4 cipher suite
+Website: eleconomista.es supports at least one RC4 cipher suite
+Website: twitlonger.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: twitlonger.com is vulnerable to downgrade attack
+Website: ada.org is vulnerable to downgrade attack
+Website: sho.com is vulnerable to ZombiePoodle attack
+Website: chinaacc.com is vulnerable to Poodle attack
+Website: montana.edu supports at least one RC4 cipher suite
+Website: montana.edu is vulnerable to Poodle attack
+Website: montana.edu is vulnerable to downgrade attack
+Website: jeep.com supports at least one RC4 cipher suite
+Website: exeter.ac.uk supports at least one RC4 cipher suite
+Website: exeter.ac.uk is vulnerable to Poodle attack
+Website: dnaindia.com is vulnerable to openSSLccs (CVE-2014-0224)
+Website: dnaindia.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: dnaindia.com is vulnerable to Poodle attack
+Website: dnaindia.com is vulnerable to downgrade attack
+Website: sonypictures.com is vulnerable to downgrade attack
+Website: frys.com is vulnerable to DROWN attack
+Website: sz.gov.cn is vulnerable to Poodle attack
+Website: kontan.co.id is vulnerable to DROWN attack
+Website: lianjia.com supports at least one RC4 cipher suite
+Website: dowjones.com supports at least one RC4 cipher suite
+Website: dowjones.com is vulnerable to openSSLccs (CVE-2014-0224)
+Website: insertlive.com is vulnerable to ROBOT attack
+Website: nuomi.com supports at least one RC4 cipher suite
+Website: mbc.net supports at least one RC4 cipher suite
+Website: flagcounter.com supports at least one RC4 cipher suite
+Website: flagcounter.com is vulnerable to Poodle attack
+Website: ofweek.com supports at least one RC4 cipher suite
+Website: ofweek.com is vulnerable to Poodle attack
+Website: belkin.com is vulnerable to ROBOT attack
+Website: globalsecurity.org supports at least one RC4 cipher suite
+Website: globalsecurity.org is vulnerable to Poodle attack
+Website: globalsecurity.org is vulnerable to FREAK attack
+Website: globalsecurity.org is vulnerable to logjam attack
+Website: anz.com is vulnerable to ZombiePoodle attack
+Website: anz.com is vulnerable to GoldenDoodle attack
+Website: anz.com is vulnerable to 0-lengthPaddingOracle attack
+Website: anz.com is vulnerable to downgrade attack
+Website: connexity.net is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: connexity.net is vulnerable to Poodle attack
+Website: hankyung.com is vulnerable to Poodle attack
+Website: betfair.com is vulnerable to ZombiePoodle attack
+Website: repec.org supports at least one RC4 cipher suite
+Website: repec.org is vulnerable to Poodle attack
+Website: pcauto.com.cn is vulnerable to Poodle attack
+Website: checkpoint.com is vulnerable to downgrade attack
+Website: macmillan.com supports at least one RC4 cipher suite
+Website: macmillan.com is vulnerable to Poodle attack
+Website: macmillan.com is vulnerable to downgrade attack
+Website: sulekha.com supports at least one RC4 cipher suite
+Website: sulekha.com is vulnerable to downgrade attack
+Website: microchip.com is vulnerable to ROBOT attack
+Website: soufun.com supports at least one RC4 cipher suite
+Website: soufun.com is vulnerable to Poodle attack
+Website: xm.com is vulnerable to 0-lengthPaddingOracle attack
+Website: tmtpost.com is vulnerable to ROBOT attack
+Website: masrawy.com supports at least one RC4 cipher suite
+Website: walmart.ca is vulnerable to ZombiePoodle attack
+Website: fanpop.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: fanpop.com is vulnerable to Poodle attack
+Website: mixi.jp supports at least one RC4 cipher suite
+Website: linksys.com is vulnerable to ROBOT attack
+Website: unwomen.org supports at least one RC4 cipher suite
+Website: unwomen.org is vulnerable to downgrade attack
+Website: yicai.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: yicai.com is vulnerable to 0-lengthPaddingOracle attack
+Website: swarthmore.edu supports at least one RC4 cipher suite
+Website: elperiodico.com supports at least one RC4 cipher suite
+Website: microad.jp supports at least one RC4 cipher suite
+Website: huxiu.com is vulnerable to ROBOT attack
+Website: etonline.com is vulnerable to ZombiePoodle attack
+Website: reson8.com supports at least one RC4 cipher suite
+Website: reson8.com is vulnerable to Poodle attack
+Website: cnki.com.cn supports at least one RC4 cipher suite
+Website: cnki.com.cn is vulnerable to Poodle attack
+Website: zennioptical.com is vulnerable to ROBOT attack
+Website: celebritynetworth.com is vulnerable to 0-lengthPaddingOracle attack
+Website: photo.net supports at least one RC4 cipher suite
+Website: friendfeed.com supports at least one RC4 cipher suite
+Website: rencaijob.com supports at least one RC4 cipher suite
+Website: lawtime.cn is vulnerable to ROBOT attack
+Website: ywart.com is vulnerable to downgrade attack
+Website: gst.gov.in is vulnerable to ZombiePoodle attack
+Website: aesoponline.com supports at least one RC4 cipher suite
+Website: webgains.com is vulnerable to DROWN attack
+Website: fooducate.com supports at least one RC4 cipher suite
+Website: nationaltrust.org.uk supports at least one RC4 cipher suite
+Website: oas.org supports at least one RC4 cipher suite
+Website: oas.org is vulnerable to downgrade attack
+Website: hyundaiusa.com is vulnerable to ZombiePoodle attack
+Website: hyundaiusa.com is vulnerable to GoldenDoodle attack
+Website: hyundaiusa.com is vulnerable to 0-lengthPaddingOracle attack
+Website: realtor.ca is vulnerable to downgrade attack
+Website: scu.edu is vulnerable to Poodle attack
+Website: xueqiu.com supports at least one RC4 cipher suite
+Website: xueqiu.com is vulnerable to Poodle attack
+Website: zap2it.com supports at least one RC4 cipher suite
+Website: zap2it.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: zap2it.com is vulnerable to Poodle attack
+Website: shoes.com is vulnerable to ZombiePoodle attack
+Website: shoes.com is vulnerable to GoldenDoodle attack
+Website: shoes.com is vulnerable to 0-lengthPaddingOracle attack
+Website: shoes.com is vulnerable to downgrade attack
+Website: dr.dk supports at least one RC4 cipher suite
+Website: theoatmeal.com supports at least one RC4 cipher suite
+Website: iarc.fr is vulnerable to downgrade attack
+Website: concordia.ca supports at least one RC4 cipher suite
+Website: astm.org supports at least one RC4 cipher suite
+Website: credit-suisse.com is vulnerable to ZombiePoodle attack
+Website: credit-suisse.com is vulnerable to GoldenDoodle attack
+Website: credit-suisse.com is vulnerable to 0-lengthPaddingOracle attack
+Website: newschool.edu is vulnerable to downgrade attack
+Website: adhaven.com supports at least one RC4 cipher suite
+Website: voicefive.com is vulnerable to downgrade attack
+Website: dslreports.com supports at least one RC4 cipher suite
+Website: dslreports.com is vulnerable to Poodle attack
+Website: theupsstore.com supports at least one RC4 cipher suite
+Website: imgbox.com is vulnerable to Poodle attack
+Website: 66law.cn is vulnerable to ROBOT attack
+Website: wowkorea.jp supports at least one RC4 cipher suite
+Website: wowkorea.jp is vulnerable to downgrade attack
+Website: kdslife.com supports at least one RC4 cipher suite
+Website: koreaherald.com supports at least one RC4 cipher suite
+Website: creaders.net supports at least one RC4 cipher suite
+Website: creaders.net is vulnerable to Poodle attack
+Website: jiji.com is vulnerable to ROBOT attack
+Website: samsungelectronics.com is vulnerable to ROBOT attack
+Website: cnr.it supports at least one RC4 cipher suite
+Website: hse.gov.uk supports at least one RC4 cipher suite
+Website: hse.gov.uk is vulnerable to downgrade attack
+Website: umkc.edu is vulnerable to downgrade attack
+Website: mbalib.com supports at least one RC4 cipher suite
+Website: anquan.org supports at least one RC4 cipher suite
+Website: chabad.org is vulnerable to downgrade attack
+Website: trip.com supports at least one RC4 cipher suite
+Website: trip.com is vulnerable to ROBOT attack
+Website: trip.com is vulnerable to ZombiePoodle attack
+Website: trip.com is vulnerable to Poodle attack
+Website: dunyanews.tv supports at least one RC4 cipher suite
+Website: dunyanews.tv is vulnerable to Poodle attack
+Website: post.ir is vulnerable to ROBOT attack
+Website: jiemian.com supports at least one RC4 cipher suite
+Website: iconcnd.co supports at least one RC4 cipher suite
+Website: vrt.be supports at least one RC4 cipher suite
+Website: flippingbook.com supports at least one RC4 cipher suite
+Website: flippingbook.com is vulnerable to downgrade attack
+Website: yonhapnews.co.kr is vulnerable to ROBOT attack
+Website: yonhapnews.co.kr is vulnerable to ZombiePoodle attack
+Website: c-sharpcorner.com supports at least one RC4 cipher suite
+Website: c-sharpcorner.com is vulnerable to downgrade attack
+Website: cac.gov.cn supports at least one RC4 cipher suite
+Website: nchsoftware.com supports at least one RC4 cipher suite
+Website: thenest.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: thenest.com is vulnerable to Poodle attack
+Website: c2.com supports at least one RC4 cipher suite
+Website: c2.com is vulnerable to openSSLccs (CVE-2014-0224)
+Website: c2.com is vulnerable to FREAK attack
+Website: c2.com is vulnerable to logjam attack
+Website: baiducontent.com supports at least one RC4 cipher suite
+Website: local.com is vulnerable to ZombiePoodle attack
+Website: arbys.com is vulnerable to 0-lengthPaddingOracle attack
+Website: medu.ir supports at least one RC4 cipher suite
+Website: teamusa.org is vulnerable to downgrade attack
+Website: hiido.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: hiido.com is vulnerable to Poodle attack
+Website: hiido.com is vulnerable to DROWN attack
+Website: bignox.com is vulnerable to ROBOT attack
+Website: vzw.com is vulnerable to ZombiePoodle attack
+Website: 07073.com supports at least one RC4 cipher suite
+Website: 07073.com is vulnerable to Poodle attack
+Website: avon.com is vulnerable to ROBOT attack
+Website: vivo.com is vulnerable to ROBOT attack
+Website: mozdev.org supports at least one RC4 cipher suite
+Website: mozdev.org is vulnerable to openSSLccs (CVE-2014-0224)
+Website: mozdev.org is vulnerable to FREAK attack
+Website: mozdev.org is vulnerable to logjam attack
+Website: gov.ao supports at least one RC4 cipher suite
+Website: safefinder.com is vulnerable to downgrade attack
+Website: clck.ru is vulnerable to downgrade attack
+Website: dazeddigital.com is vulnerable to downgrade attack
+Website: chinaunix.net supports at least one RC4 cipher suite
+Website: physiology.org is vulnerable to downgrade attack
+Website: binghamton.edu supports at least one RC4 cipher suite
+Website: askul.co.jp supports at least one RC4 cipher suite
+Website: oscars.org supports at least one RC4 cipher suite
+Website: rogers.com is vulnerable to downgrade attack
+Website: rthk.hk is vulnerable to downgrade attack
+Website: tsite.jp supports at least one RC4 cipher suite
+Website: tsite.jp is vulnerable to ROBOT attack
+Website: kuwo.cn is vulnerable to Poodle attack
+Website: msn.cn is vulnerable to downgrade attack
+Website: lexology.com is vulnerable to downgrade attack
+Website: dndbeyond.com is vulnerable to downgrade attack
+Website: 1stdibs.com is vulnerable to downgrade attack
+Website: rafflecopter.com supports at least one RC4 cipher suite
+Website: manuscriptcentral.com supports at least one RC4 cipher suite
+Website: manuscriptcentral.com is vulnerable to Poodle attack
+Website: flavors.me supports at least one RC4 cipher suite
+Website: flavors.me is vulnerable to Poodle attack
+Website: alisoft.com supports at least one RC4 cipher suite
+Website: tehran.ir is vulnerable to downgrade attack
+Website: wellnessmama.com is vulnerable to ROBOT attack
+Website: upsc.gov.in supports at least one RC4 cipher suite
+Website: upsc.gov.in is vulnerable to FREAK attack
+Website: omnihotels.com is vulnerable to ROBOT attack
+Website: navitime.co.jp supports at least one RC4 cipher suite
+Website: v-mate.mobi is vulnerable to ROBOT attack
+Website: txstate.edu supports at least one RC4 cipher suite
+Website: book118.com supports at least one RC4 cipher suite
+Website: book118.com is vulnerable to Poodle attack
+Website: book118.com is vulnerable to downgrade attack
+Website: henan.gov.cn is vulnerable to Poodle attack
+Website: mobileadtrading.com supports at least one RC4 cipher suite
+Website: mobileadtrading.com is vulnerable to Poodle attack
+Website: dvdvideosoft.com supports at least one RC4 cipher suite
+Website: dvdvideosoft.com is vulnerable to Poodle attack
+Website: dvdvideosoft.com is vulnerable to downgrade attack
+Website: alitrip.com supports at least one RC4 cipher suite
+Website: tsn.ua is vulnerable to ZombiePoodle attack
+Website: tsn.ua is vulnerable to GoldenDoodle attack
+Website: tsn.ua is vulnerable to 0-lengthPaddingOracle attack
+Website: psychologicalscience.org is vulnerable to downgrade attack
+Website: hktdc.com supports at least one RC4 cipher suite
+Website: hktdc.com is vulnerable to Poodle attack
+Website: hktdc.com is vulnerable to downgrade attack
+Website: jc001.cn is vulnerable to ROBOT attack
+Website: lfstmedia.com supports at least one RC4 cipher suite
+Website: imotors.com supports at least one RC4 cipher suite
+Website: imotors.com is vulnerable to Poodle attack
+Website: imotors.com is vulnerable to downgrade attack
+Website: st.com supports at least one RC4 cipher suite
+Website: unece.org supports at least one RC4 cipher suite
+Website: visymo.com supports at least one RC4 cipher suite
+Website: mql5.com is vulnerable to downgrade attack
+Website: fortinet.com supports at least one RC4 cipher suite
+Website: fortinet.com is vulnerable to Poodle attack
+Website: adac.de is vulnerable to downgrade attack
+Website: bgsu.edu supports at least one RC4 cipher suite
+Website: bgsu.edu is vulnerable to ROBOT attack
+Website: bgsu.edu is vulnerable to downgrade attack
+Website: takepart.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: fengniao.com is vulnerable to Poodle attack
+Website: no-ip.com supports at least one RC4 cipher suite
+Website: no-ip.com is vulnerable to downgrade attack
+Website: newsmemory.com supports at least one RC4 cipher suite
+Website: vector.co.jp is vulnerable to downgrade attack
+Website: elibrary.ru supports at least one RC4 cipher suite
+Website: elibrary.ru is vulnerable to downgrade attack
+Website: blueletterbible.org is vulnerable to downgrade attack
+Website: streetinsider.com supports at least one RC4 cipher suite
+Website: ntv.co.jp is vulnerable to ROBOT attack
+Website: jssor.com is vulnerable to downgrade attack
+Website: skipthegames.com supports at least one RC4 cipher suite
+Website: skipthegames.com is vulnerable to Poodle attack
+Website: perm.ru supports at least one RC4 cipher suite
+Website: perm.ru is vulnerable to Poodle attack
+Website: isitdownrightnow.com supports at least one RC4 cipher suite
+Website: powernationtv.com is vulnerable to ZombiePoodle attack
+Website: powernationtv.com is vulnerable to GoldenDoodle attack
+Website: powernationtv.com is vulnerable to 0-lengthPaddingOracle attack
+Website: romwe.com supports at least one RC4 cipher suite
+Website: yes24.com supports at least one RC4 cipher suite
+Website: yes24.com is vulnerable to downgrade attack
+Website: yes24.com is vulnerable to DROWN attack
+Website: toluna.com is vulnerable to ZombiePoodle attack
+Website: open.edu is vulnerable to ZombiePoodle attack
+Website: qianzhan.com is vulnerable to downgrade attack
+Website: 3dcartstores.com supports at least one RC4 cipher suite
+Website: 3dcartstores.com is vulnerable to downgrade attack
+Website: anz.com.au is vulnerable to ZombiePoodle attack
+Website: anz.com.au is vulnerable to GoldenDoodle attack
+Website: anz.com.au is vulnerable to 0-lengthPaddingOracle attack
+Website: anz.com.au is vulnerable to downgrade attack
+Website: wkzf.com supports at least one RC4 cipher suite
+Website: le.com is vulnerable to Poodle attack
+Website: pornhat.com supports at least one RC4 cipher suite
+Website: pornhat.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: pornhat.com is vulnerable to Poodle attack
+Website: writtingessays.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: 35.com is vulnerable to DROWN attack
+Website: informit.com supports at least one RC4 cipher suite
+Website: travelchannel.com is vulnerable to ROBOT attack
+Website: korrespondent.net is vulnerable to downgrade attack
+Website: hikvision.com is vulnerable to downgrade attack
+Website: multitran.com is vulnerable to downgrade attack
+Website: pressganey.com supports at least one RC4 cipher suite
+Website: gouv.qc.ca is vulnerable to downgrade attack
+Website: jfdaily.com is vulnerable to Poodle attack
+Website: instagr.am supports at least one RC4 cipher suite
+Website: acronymfinder.com is vulnerable to downgrade attack
+Website: hugoboss.com is vulnerable to downgrade attack
+Website: yam.com is vulnerable to downgrade attack
+Website: txdot.gov supports at least one RC4 cipher suite
+Website: tmon.co.kr is vulnerable to ZombiePoodle attack
+Website: chrysler.com supports at least one RC4 cipher suite
+Website: sleepnumber.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: sleepnumber.com is vulnerable to 0-lengthPaddingOracle attack
+Website: ebags.com is vulnerable to downgrade attack
+Website: xhby.net is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: xhby.net is vulnerable to 0-lengthPaddingOracle attack
+Website: property24.com is vulnerable to downgrade attack
+Website: ovid.com supports at least one RC4 cipher suite
+Website: nwf.org supports at least one RC4 cipher suite
+Website: nwf.org is vulnerable to Poodle attack
+Website: appgame.com supports at least one RC4 cipher suite
+Website: appgame.com is vulnerable to Poodle attack
+Website: appgame.com is vulnerable to downgrade attack
+Website: yastatic.net supports at least one RC4 cipher suite
+Website: helpstart.co.kr supports at least one RC4 cipher suite
+Website: helpstart.co.kr is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: helpstart.co.kr is vulnerable to 0-lengthPaddingOracle attack
+Website: mediav.com supports at least one RC4 cipher suite
+Website: tianyancha.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: renweb.com supports at least one RC4 cipher suite
+Website: renweb.com is vulnerable to downgrade attack
+Website: filefactory.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: mdanderson.org supports at least one RC4 cipher suite
+Website: ecrater.com supports at least one RC4 cipher suite
+Website: ecrater.com is vulnerable to Poodle attack
+Website: pdf2jpg.net supports at least one RC4 cipher suite
+Website: pdf2jpg.net is vulnerable to Poodle attack
+Website: ipsosinteractive.com supports at least one RC4 cipher suite
+Website: ipsosinteractive.com is vulnerable to Poodle attack
+Website: ipsosinteractive.com is vulnerable to downgrade attack
+Website: farpost.ru is vulnerable to Poodle attack
+Website: netspend.com is vulnerable to ZombiePoodle attack
+Website: adscale.de supports at least one RC4 cipher suite
+Website: vivo.com.br is vulnerable to downgrade attack
+Website: ramtrucks.com supports at least one RC4 cipher suite
+Website: outlookindia.com is vulnerable to Poodle attack
+Website: acog.org is vulnerable to downgrade attack
+Website: starcasm.net supports at least one RC4 cipher suite
+Website: cityheaven.net supports at least one RC4 cipher suite
+Website: cityheaven.net is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: cityheaven.net is vulnerable to 0-lengthPaddingOracle attack
+Website: cityheaven.net is vulnerable to Poodle attack
+Website: cityheaven.net is vulnerable to FREAK attack
+Website: 263.net is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: 263.net is vulnerable to 0-lengthPaddingOracle attack
+Website: 263.net is vulnerable to Poodle attack
+Website: tritondigital.com is vulnerable to DROWN attack
+Website: admin5.com is vulnerable to Poodle attack
+Website: cleartrip.com supports at least one RC4 cipher suite
+Website: picofile.com supports at least one RC4 cipher suite
+Website: picofile.com is vulnerable to downgrade attack
+Website: car.com is vulnerable to ROBOT attack
+Website: zakupki.gov.ru supports at least one RC4 cipher suite
+Website: strawpoll.me is vulnerable to downgrade attack
+Website: eftymarket.com supports at least one RC4 cipher suite
+Website: weiyangx.com is vulnerable to the Heartbleed attack
+Website: weiyangx.com is vulnerable to openSSLccs (CVE-2014-0224)
+Website: weiyangx.com is vulnerable to downgrade attack
+Website: bobibanking.com is vulnerable to GoldenDoodle attack
+Website: bobibanking.com is vulnerable to 0-lengthPaddingOracle attack
+Website: bobibanking.com is vulnerable to SleepingPoodle attack
+Website: lodz.pl supports at least one RC4 cipher suite
+Website: lodz.pl is vulnerable to openSSLccs (CVE-2014-0224)
+Website: lodz.pl is vulnerable to Poodle attack
+Website: lodz.pl is vulnerable to downgrade attack
+Website: lodz.pl is vulnerable to FREAK attack
+Website: lodz.pl is vulnerable to logjam attack
+Website: globes.co.il is vulnerable to downgrade attack
+Website: pornolab.net supports at least one RC4 cipher suite
+Website: pornolab.net is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: pornolab.net is vulnerable to 0-lengthPaddingOracle attack
+Website: pornolab.net is vulnerable to Poodle attack
+Website: newyorkfed.org is vulnerable to downgrade attack
+Website: bea.gov is vulnerable to downgrade attack
+Website: crsky.com supports at least one RC4 cipher suite
+Website: crsky.com is vulnerable to downgrade attack
+Website: gingersoftware.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: kennesaw.edu supports at least one RC4 cipher suite
+Website: roomstogo.com is vulnerable to openSSLccs (CVE-2014-0224)
+Website: grc.com is vulnerable to downgrade attack
+Website: marketingprofs.com is vulnerable to downgrade attack
+Website: hometax.go.kr is vulnerable to ZombiePoodle attack
+Website: hometax.go.kr is vulnerable to Poodle attack
+Website: imtranslator.net supports at least one RC4 cipher suite
+Website: imtranslator.net is vulnerable to Poodle attack
+Website: 22.cn supports at least one RC4 cipher suite
+Website: 22.cn is vulnerable to downgrade attack
+Website: format.com supports at least one RC4 cipher suite
+Website: fpl.com is vulnerable to ZombiePoodle attack
+Website: fpl.com is vulnerable to SleepingPoodle attack
+Website: fpl.com is vulnerable to PoodleTLS attack
+Website: fpl.com is vulnerable to downgrade attack
+Website: benchmarkemail.com is vulnerable to ZombiePoodle attack
+Website: benchmarkemail.com is vulnerable to GoldenDoodle attack
+Website: benchmarkemail.com is vulnerable to 0-lengthPaddingOracle attack
+Website: benchmarkemail.com is vulnerable to DROWN attack
+Website: utsa.edu is vulnerable to downgrade attack
+Website: dominionenergy.com is vulnerable to ZombiePoodle attack
+Website: dominionenergy.com is vulnerable to GoldenDoodle attack
+Website: dominionenergy.com is vulnerable to 0-lengthPaddingOracle attack
+Website: dodge.com supports at least one RC4 cipher suite
+Website: elblog.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: elblog.com is vulnerable to 0-lengthPaddingOracle attack
+Website: poemhunter.com supports at least one RC4 cipher suite
+Website: poemhunter.com is vulnerable to downgrade attack
+Website: biji.co supports at least one RC4 cipher suite
+Website: wwu.edu supports at least one RC4 cipher suite
+Website: insideedition.com is vulnerable to ZombiePoodle attack
+Website: noip.com is vulnerable to downgrade attack
+Website: rosreestr.ru is vulnerable to ROBOT attack
+Website: rosreestr.ru is vulnerable to PoodleTLS attack
+Website: rosreestr.ru is vulnerable to downgrade attack
+Website: myzaker.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: myzaker.com is vulnerable to downgrade attack
+Website: ifensi.com is vulnerable to ROBOT attack
+Website: taipeitimes.com supports at least one RC4 cipher suite
+Website: taipeitimes.com is vulnerable to Poodle attack
+Website: gtarcade.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: gtarcade.com is vulnerable to downgrade attack
+Website: newswise.com supports at least one RC4 cipher suite
+Website: bigoven.com is vulnerable to downgrade attack
+Website: baidustatic.com supports at least one RC4 cipher suite
+Website: easychair.org supports at least one RC4 cipher suite
+Website: easychair.org is vulnerable to Poodle attack
+Website: worldtimeserver.com supports at least one RC4 cipher suite
+Website: worldtimeserver.com is vulnerable to downgrade attack
+Website: bloomsbury.com is vulnerable to downgrade attack
+Website: gomlab.com supports at least one RC4 cipher suite
+Website: gomlab.com is vulnerable to FREAK attack
+Website: gomlab.com is vulnerable to logjam attack
+Website: donews.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: donews.com is vulnerable to 0-lengthPaddingOracle attack
+Website: unal.edu.co supports at least one RC4 cipher suite
+Website: creighton.edu supports at least one RC4 cipher suite
+Website: creighton.edu is vulnerable to Poodle attack
+Website: thefreelibrary.com supports at least one RC4 cipher suite
+Website: thefreelibrary.com is vulnerable to downgrade attack
+Website: etihad.com supports at least one RC4 cipher suite
+Website: keywordblocks.com supports at least one RC4 cipher suite
+Website: keywordblocks.com is vulnerable to ZombiePoodle attack
+Website: keywordblocks.com is vulnerable to SleepingPoodle attack
+Website: keywordblocks.com is vulnerable to PoodleTLS attack
+Website: keywordblocks.com is vulnerable to downgrade attack
+Website: atptour.com supports at least one RC4 cipher suite
+Website: atptour.com is vulnerable to Poodle attack
+Website: realtytrac.com is vulnerable to downgrade attack
+Website: zonealarm.com is vulnerable to downgrade attack
+Website: 1gb.ru is vulnerable to Poodle attack
+Website: sportsline.com is vulnerable to ZombiePoodle attack
+Website: openlearning.com is vulnerable to downgrade attack
+Website: brynmawr.edu supports at least one RC4 cipher suite
+Website: mobile.ir is vulnerable to downgrade attack
+Website: ces.tech supports at least one RC4 cipher suite
+Website: ces.tech is vulnerable to downgrade attack
+Website: copyscape.com supports at least one RC4 cipher suite
+Website: copyscape.com is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: copyscape.com is vulnerable to Poodle attack
+Website: indexmundi.com supports at least one RC4 cipher suite
+Website: indexmundi.com is vulnerable to Poodle attack
+Website: indexmundi.com is vulnerable to downgrade attack
+Website: score.org supports at least one RC4 cipher suite
+Website: score.org is vulnerable to openSSLccs (CVE-2014-0224)
+Website: score.org is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: score.org is vulnerable to Poodle attack
+Website: score.org is vulnerable to downgrade attack
+Website: score.org is vulnerable to FREAK attack
+Website: score.org is vulnerable to logjam attack
+Website: securedvisit.com supports at least one RC4 cipher suite
+Website: kproxy.com is vulnerable to downgrade attack
+Website: lwn.net supports at least one RC4 cipher suite
+Website: cpmstar.com supports at least one RC4 cipher suite
+Website: tju.edu.cn supports at least one RC4 cipher suite
+Website: tju.edu.cn is vulnerable to Poodle attack
+Website: 123greetings.com supports at least one RC4 cipher suite
+Website: 123greetings.com is vulnerable to Poodle attack
+Website: convertmyvid.com is vulnerable to downgrade attack
+Website: huangye88.com is vulnerable to Poodle attack
+Website: essay-911.com supports at least one RC4 cipher suite
+Website: maharashtra.gov.in is vulnerable to downgrade attack
+Website: sandai.net is vulnerable to ROBOT attack
+Website: usm.edu supports at least one RC4 cipher suite
+Website: qlwb.com.cn is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: qlwb.com.cn is vulnerable to 0-lengthPaddingOracle attack
+Website: qlwb.com.cn is vulnerable to downgrade attack
+Website: blackplanet.com supports at least one RC4 cipher suite
+Website: alitalia.com supports at least one RC4 cipher suite
+Website: rsalcau.com supports at least one RC4 cipher suite
+Website: rsalcau.com is vulnerable to Poodle attack
+Website: trekbikes.com is vulnerable to downgrade attack
+Website: buzzle.com is vulnerable to downgrade attack
+Website: tiexue.net supports at least one RC4 cipher suite
+Website: tiexue.net is vulnerable to Poodle attack
+Website: tiexue.net is vulnerable to downgrade attack
+Website: core77.com is vulnerable to downgrade attack
+Website: dinamalar.com supports at least one RC4 cipher suite
+Website: torrent-igruha.org is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: torrent-igruha.org is vulnerable to Poodle attack
+Website: rabbitpre.com is vulnerable to ROBOT attack
+Website: usal.es is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)
+Website: usal.es is vulnerable to 0-lengthPaddingOracle attack
+Website: nvsp.in is vulnerable to downgrade attack
+Website: saksoff5th.com is vulnerable to ROBOT attack
+Website: afi-b.com supports at least one RC4 cipher suite
+Website: arcamax.com supports at least one RC4 cipher suite
+Website: www.edu.cn is vulnerable to ROBOT attack
+Website: unext.jp is vulnerable to openSSLccs (CVE-2014-0224)
+Website: kompass.com supports at least one RC4 cipher suite
+Website: kompass.com is vulnerable to Poodle attack
+Website: firstcry.com supports at least one RC4 cipher suite
+Website: firstcry.com is vulnerable to Poodle attack
+Website: firstcry.com is vulnerable to downgrade attack
+Website: sutterhealth.org is vulnerable to ZombiePoodle attack
+++++++++++++++++++++++++++++++++++++++++++
+Number of vulnerable sites: 486
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    7194
+True      334
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 4.43677
+
+False    7519
+True        1
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.01328
+
+False    5875
+True     1645
+Name: heartbeat, dtype: int64
+
+ 1.0    7479
+-1.0      27
+ 2.0       9
+ 0.0       8
+ 3.0       5
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.18597
+
+ 1.0    7317
+-1.0     160
+ 2.0      43
+ 0.0       8
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.5712
+
+ 1.0    7512
+ 0.0       8
+-1.0       6
+ 3.0       2
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    7416
+ 4.0      38
+ 2.0      35
+ 3.0      31
+ 0.0       7
+-1.0       1
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.87673
+
+ 1.0    6625
+-1.0     842
+ 3.0      60
+ 2.0       1
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.81031
+
+ 1.0    6666
+-1.0     842
+ 5.0      20
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.26567
+
+ 1.0    6643
+-1.0     842
+ 6.0      23
+ 7.0      20
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.5712
+
+ 1.0     6678
+-1.0      842
+ 11.0       8
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.10627
+
+False    7375
+True      152
+Name: poodle, dtype: int64
+Percentage Vulnerable: 2.01913
+
+ 1.0    7476
+-3.0      37
+ 0.0       8
+ 2.0       7
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.09299
+
+True     5876
+False     202
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 2.68332
+
+False    7511
+True       17
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.22582
+
+False    7520
+True        8
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.10627
+
+False    7517
+True       11
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.14612
+
+++++++++++++++++++++++++++++++++++++++++++
+==========================================

@@ -1,0 +1,1596 @@
+Results for TLS Analysis:
+Analysis run at: 2020-04-13 23:45:14.945095
+==========================================
+Geolocation Analysis
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: CA, Canada
+Number of URLs Analyzed: 119
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     70
+A     41
+A+     4
+F      2
+C      2
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 0, 'SSL v3.0': 2, 'TLS v1.0': 64, 'TLS v1.1': 73, 'TLS v1.2': 119, 'TLS v1.3': 23}
+Number of sites that support SSL: 2
+Number of sites that support TLS v1.0 or v1.1: 74
+Number of sites that support TLS: 119
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 0
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 96
+Number of sites that support max TLS v1.3: 23
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    113
+True       6
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    119
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    75
+True     44
+Name: heartbeat, dtype: int64
+
+1.0    119
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    119
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    119
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    118
+3.0      1
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    108
+-1.0     11
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    108
+-1.0     11
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    108
+-1.0     11
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    108
+-1.0     11
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    117
+True       2
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    119
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     85
+False     7
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    119
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    119
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    119
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: CN, China
+Number of URLs Analyzed: 385
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B    272
+F     62
+C     47
+A      4
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 4, 'SSL v3.0': 66, 'TLS v1.0': 364, 'TLS v1.1': 362, 'TLS v1.2': 372, 'TLS v1.3': 17}
+Number of sites that support SSL: 66
+Number of sites that support TLS v1.0 or v1.1: 371
+Number of sites that support TLS: 379
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 7
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 355
+Number of sites that support max TLS v1.3: 17
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    318
+True      67
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    378
+True       1
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     243
+False    136
+Name: heartbeat, dtype: int64
+
+ 1.0    373
+ 0.0      6
+-1.0      3
+ 3.0      2
+ 2.0      1
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    360
+ 2.0     16
+ 0.0      6
+-1.0      3
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    377
+ 0.0      6
+ 3.0      1
+-1.0      1
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    339
+4.0     20
+2.0     16
+0.0      6
+3.0      4
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    351
+-1.0     32
+ 3.0      2
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    353
+-1.0     32
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    345
+-1.0     32
+ 6.0      8
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0     352
+-1.0      32
+ 11.0      1
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    337
+True      48
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    373
+ 0.0      6
+-3.0      5
+ 2.0      1
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     340
+False     29
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    383
+True       2
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    385
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    383
+True       2
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: DE, Germany
+Number of URLs Analyzed: 228
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     164
+A      43
+A+     19
+C       1
+F       1
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 0, 'SSL v3.0': 3, 'TLS v1.0': 154, 'TLS v1.1': 160, 'TLS v1.2': 228, 'TLS v1.3': 38}
+Number of sites that support SSL: 3
+Number of sites that support TLS v1.0 or v1.1: 161
+Number of sites that support TLS: 228
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 0
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 190
+Number of sites that support max TLS v1.3: 38
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    226
+True       2
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    228
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    143
+True      85
+Name: heartbeat, dtype: int64
+
+ 1.0    227
+-1.0      1
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    226
+ 2.0      1
+-1.0      1
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    228
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    227
+4.0      1
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    224
+-1.0      4
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    224
+-1.0      4
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    224
+-1.0      4
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    224
+-1.0      4
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    226
+True       2
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    227
+-3.0      1
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     176
+False      1
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    228
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    228
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    228
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: FR, France
+Number of URLs Analyzed: 143
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     110
+A      18
+A+      7
+F       5
+C       3
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 0, 'SSL v3.0': 3, 'TLS v1.0': 108, 'TLS v1.1': 116, 'TLS v1.2': 142, 'TLS v1.3': 23}
+Number of sites that support SSL: 3
+Number of sites that support TLS v1.0 or v1.1: 117
+Number of sites that support TLS: 142
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 0
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 119
+Number of sites that support max TLS v1.3: 23
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    139
+True       4
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    142
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    86
+True     56
+Name: heartbeat, dtype: int64
+
+1.0    142
+0.0      1
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    141
+0.0      1
+2.0      1
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    142
+0.0      1
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    141
+0.0      1
+3.0      1
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    141
+-1.0      2
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    141
+-1.0      2
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    141
+-1.0      2
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    141
+-1.0      2
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    140
+True       3
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    142
+0.0      1
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     120
+False      5
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    143
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    143
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    142
+True       1
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: GB, United Kingdom
+Number of URLs Analyzed: 169
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     123
+A      20
+A+     13
+F       7
+C       6
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 1, 'SSL v3.0': 6, 'TLS v1.0': 114, 'TLS v1.1': 131, 'TLS v1.2': 169, 'TLS v1.3': 22}
+Number of sites that support SSL: 6
+Number of sites that support TLS v1.0 or v1.1: 133
+Number of sites that support TLS: 169
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 0
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 147
+Number of sites that support max TLS v1.3: 22
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    161
+True       8
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    169
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    109
+True      60
+Name: heartbeat, dtype: int64
+
+1.0    169
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    166
+ 2.0      2
+-1.0      1
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    169
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    169
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    166
+3.0      3
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    168
+5.0      1
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    167
+7.0      1
+6.0      1
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    169
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    164
+True       5
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    168
+-3.0      1
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     130
+False     10
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    169
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    169
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    169
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: IE, Ireland
+Number of URLs Analyzed: 107
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     76
+A     18
+A+     8
+C      3
+F      2
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 1, 'SSL v3.0': 3, 'TLS v1.0': 71, 'TLS v1.1': 76, 'TLS v1.2': 106, 'TLS v1.3': 5}
+Number of sites that support SSL: 3
+Number of sites that support TLS v1.0 or v1.1: 77
+Number of sites that support TLS: 107
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 1
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 101
+Number of sites that support max TLS v1.3: 5
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    98
+True      9
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    107
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    78
+True     29
+Name: heartbeat, dtype: int64
+
+1.0    107
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    107
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    107
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    107
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    104
+-1.0      3
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    104
+-1.0      3
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    103
+-1.0      3
+ 6.0      1
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    104
+-1.0      3
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    104
+True       3
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    107
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     77
+False     3
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    107
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    107
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    107
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: IN, India
+Number of URLs Analyzed: 61
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     35
+A      9
+F      7
+C      5
+A+     4
+A-     1
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 0, 'SSL v3.0': 8, 'TLS v1.0': 29, 'TLS v1.1': 39, 'TLS v1.2': 61, 'TLS v1.3': 0}
+Number of sites that support SSL: 8
+Number of sites that support TLS v1.0 or v1.1: 39
+Number of sites that support TLS: 61
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 0
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 61
+Number of sites that support max TLS v1.3: 0
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    55
+True      6
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    61
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    43
+True     18
+Name: heartbeat, dtype: int64
+
+ 1.0    60
+-1.0     1
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    61
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    61
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    61
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    56
+ 3.0     4
+-1.0     1
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    58
+ 5.0     2
+-1.0     1
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    58
+ 7.0     2
+-1.0     1
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0     59
+ 11.0     1
+-1.0      1
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    54
+True      7
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    60
+-3.0     1
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     35
+False     4
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    60
+True      1
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    61
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    61
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: IR, Iran, Islamic Republic of
+Number of URLs Analyzed: 72
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     51
+A     18
+F      2
+A+     1
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 0, 'SSL v3.0': 1, 'TLS v1.0': 53, 'TLS v1.1': 52, 'TLS v1.2': 71, 'TLS v1.3': 10}
+Number of sites that support SSL: 1
+Number of sites that support TLS v1.0 or v1.1: 53
+Number of sites that support TLS: 72
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 1
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 61
+Number of sites that support max TLS v1.3: 10
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    66
+True      6
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    72
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    37
+True     35
+Name: heartbeat, dtype: int64
+
+1.0    72
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    72
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    71
+3.0     1
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    71
+3.0     1
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    70
+-1.0     2
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    70
+-1.0     2
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    70
+-1.0     2
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    70
+-1.0     2
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    71
+True      1
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    72
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     48
+False     6
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    71
+True      1
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    72
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    72
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: JP, Japan
+Number of URLs Analyzed: 114
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     80
+A     15
+F     10
+C      5
+A+     4
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 0, 'SSL v3.0': 5, 'TLS v1.0': 87, 'TLS v1.1': 89, 'TLS v1.2': 112, 'TLS v1.3': 7}
+Number of sites that support SSL: 5
+Number of sites that support TLS v1.0 or v1.1: 92
+Number of sites that support TLS: 114
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 2
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 105
+Number of sites that support max TLS v1.3: 7
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    102
+True      12
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    114
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    76
+True     38
+Name: heartbeat, dtype: int64
+
+1.0    113
+2.0      1
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    113
+2.0      1
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    114
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    108
+2.0      4
+3.0      2
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    113
+3.0      1
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    114
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    113
+6.0      1
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0     113
+11.0      1
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    109
+True       5
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    113
+2.0      1
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     93
+False     3
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    113
+True       1
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    114
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    114
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: NL, Netherlands
+Number of URLs Analyzed: 163
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     113
+A      29
+A+     10
+C       5
+F       3
+A-      3
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 0, 'SSL v3.0': 8, 'TLS v1.0': 106, 'TLS v1.1': 116, 'TLS v1.2': 163, 'TLS v1.3': 31}
+Number of sites that support SSL: 8
+Number of sites that support TLS v1.0 or v1.1: 116
+Number of sites that support TLS: 163
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 0
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 132
+Number of sites that support max TLS v1.3: 31
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    152
+True      11
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    163
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    85
+True     78
+Name: heartbeat, dtype: int64
+
+1.0    163
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    160
+2.0      3
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    163
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    163
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    158
+-1.0      5
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    158
+-1.0      5
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    157
+-1.0      5
+ 6.0      1
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    158
+-1.0      5
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    156
+True       7
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    163
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     126
+False      5
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    163
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    163
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    163
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: RU, Russian Federation
+Number of URLs Analyzed: 158
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     138
+A+      7
+A       6
+C       4
+F       3
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 1, 'SSL v3.0': 6, 'TLS v1.0': 138, 'TLS v1.1': 142, 'TLS v1.2': 157, 'TLS v1.3': 49}
+Number of sites that support SSL: 6
+Number of sites that support TLS v1.0 or v1.1: 143
+Number of sites that support TLS: 158
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 1
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 108
+Number of sites that support max TLS v1.3: 49
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    149
+True       9
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    158
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    98
+True     60
+Name: heartbeat, dtype: int64
+
+1.0    158
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    158
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    158
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    157
+3.0      1
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    156
+-1.0      2
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    156
+-1.0      2
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    156
+-1.0      2
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    156
+-1.0      2
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    154
+True       4
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    157
+2.0      1
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     138
+False      8
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    158
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    158
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    158
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: SG, Singapore
+Number of URLs Analyzed: 69
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B    57
+A     6
+F     5
+C     1
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 0, 'SSL v3.0': 2, 'TLS v1.0': 53, 'TLS v1.1': 58, 'TLS v1.2': 68, 'TLS v1.3': 5}
+Number of sites that support SSL: 2
+Number of sites that support TLS v1.0 or v1.1: 59
+Number of sites that support TLS: 69
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 1
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 63
+Number of sites that support max TLS v1.3: 5
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    64
+True      5
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    69
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    38
+True     31
+Name: heartbeat, dtype: int64
+
+1.0    67
+3.0     1
+2.0     1
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    68
+2.0     1
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    69
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    67
+2.0     2
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    69
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    69
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    69
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    69
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    67
+True      2
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    69
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     60
+False     3
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    69
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    69
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    68
+True      1
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+GEOLOCATION BREAKDOWN FOR: US, United States
+Number of URLs Analyzed: 5962
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     4028
+A     1295
+A+     446
+F      132
+C       58
+A-       3
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 5, 'SSL v3.0': 78, 'TLS v1.0': 3379, 'TLS v1.1': 4002, 'TLS v1.2': 5940, 'TLS v1.3': 2135}
+Number of sites that support SSL: 78
+Number of sites that support TLS v1.0 or v1.1: 4072
+Number of sites that support TLS: 5962
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 20
+Number of sites that support max TLS v1.1: 1
+Number of sites that support max TLS v1.2: 3806
+Number of sites that support max TLS v1.3: 2135
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    5784
+True      178
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    5961
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    5171
+True      790
+Name: heartbeat, dtype: int64
+
+ 1.0    5937
+-1.0      17
+ 2.0       5
+ 3.0       2
+ 0.0       1
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    5771
+-1.0     173
+ 2.0      17
+ 0.0       1
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    5958
+-1.0       3
+ 0.0       1
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    5909
+ 3.0      20
+ 4.0      20
+ 2.0      12
+-1.0       1
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    5088
+-1.0     832
+ 3.0      41
+ 2.0       1
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    5116
+-1.0     832
+ 5.0      14
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    5105
+-1.0     832
+ 7.0      14
+ 6.0      11
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0     5127
+-1.0      832
+ 11.0       3
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    5901
+True       60
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    5929
+-3.0      30
+ 2.0       2
+ 0.0       1
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     4591
+False     112
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    5952
+True       10
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    5956
+True        6
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    5957
+True        5
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Number of countries in other category: 63
+Countries in other category: AE, United Arab Emirates; AO, Angola; AP, Asia/Pacific Region; AR, Argentina; AT, Austria; AU, Australia; AZ, Azerbaijan; BA, Bosnia and Herzegovina; BE, Belgium; BG, Bulgaria; BR, Brazil; BY, Belarus; BZ, Belize; CH, Switzerland; CL, Chile; CU, Cuba; CW, Curacao; CY, Cyprus; CZ, Czech Republic; DK, Denmark; EE, Estonia; EG, Egypt; ES, Spain; EU, Europe; FI, Finland; GR, Greece; HK, Hong Kong; HR, Croatia; HU, Hungary; ID, Indonesia; IL, Israel; IP Address not found; IS, Iceland; IT, Italy; KG, Kyrgyzstan; KR, Korea, Republic of; KZ, Kazakhstan; LT, Lithuania; LU, Luxembourg; LV, Latvia; MD, Moldova, Republic of; MX, Mexico; MY, Malaysia; NO, Norway; NZ, New Zealand; PH, Philippines; PL, Poland; PT, Portugal; RO, Romania; RS, Serbia; SA, Saudi Arabia; SE, Sweden; SK, Slovakia; TH, Thailand; TN, Tunisia; TR, Turkey; TW, Taiwan; UA, Ukraine; VA, Holy See (Vatican City State); VE, Venezuela; VG, Virgin Islands, British; VN, Vietnam; ZA, South Africa
+GEOLOCATION FOR OTHER COUNTRIES:
+Number of URLs Analyzed: 672
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     501
+A      92
+F      36
+A+     27
+C      11
+A-      5
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 1, 'SSL v3.0': 18, 'TLS v1.0': 487, 'TLS v1.1': 525, 'TLS v1.2': 670, 'TLS v1.3': 101}
+Number of sites that support SSL: 18
+Number of sites that support TLS v1.0 or v1.1: 534
+Number of sites that support TLS: 672
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 2
+Number of sites that support max TLS v1.1: 0
+Number of sites that support max TLS v1.2: 569
+Number of sites that support max TLS v1.3: 101
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    626
+True      46
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    672
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    437
+True     235
+Name: heartbeat, dtype: int64
+
+ 1.0    663
+-1.0      7
+ 2.0      2
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    669
+ 2.0      2
+-1.0      1
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    670
+-1.0      2
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+1.0    662
+2.0      4
+3.0      4
+4.0      2
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    633
+-1.0     23
+ 3.0     16
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    645
+-1.0     23
+ 5.0      4
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    643
+-1.0     23
+ 7.0      4
+ 6.0      2
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0     647
+-1.0      23
+ 11.0      2
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    656
+True      16
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    667
+-3.0      3
+ 2.0      2
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     536
+False     27
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    670
+True       2
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    670
+True       2
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    669
+True       3
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+==========================================

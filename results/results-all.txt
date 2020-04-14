@@ -1,0 +1,137 @@
+Results for TLS Analysis:
+Analysis run at: 2020-04-13 23:44:47.022847
+==========================================
+Regular Analysis
+Number of URLs Analyzed: 8422
+++++++++++++++++++++++++++++++++++++++++++
+Overall Grades:
+B     5818
+A     1614
+A+     550
+F      277
+C      151
+A-      12
+Name: grade, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+TLS Protocols Supported:
+{'SSL v2.0': 13, 'SSL v3.0': 209, 'TLS v1.0': 5207, 'TLS v1.1': 5941, 'TLS v1.2': 8378, 'TLS v1.3': 2466}
+Number of sites that support SSL: 209
+Number of sites that support TLS v1.0 or v1.1: 6041
+Number of sites that support TLS: 8415
+Number of sites that support max SSL v2.0: 0
+Number of sites that support max SSL v3.0: 0
+Number of sites that support max TLS v1.0: 35
+Number of sites that support max TLS v1.1: 1
+Number of sites that support max TLS v1.2: 5913
+Number of sites that support max TLS v1.3: 2466
+++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Report:
+++++++++++++++++++++++++++++++++++++++++++
+Vulnerability Statistics:
+False    8053
+True      369
+Name: supportsRc4, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    8413
+True        1
+Name: heartbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    6612
+True     1802
+Name: heartbeat, dtype: int64
+
+ 1.0    8370
+-1.0      29
+ 2.0      10
+ 0.0       8
+ 3.0       5
+Name: openSslCcs, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    8191
+-1.0     179
+ 2.0      44
+ 0.0       8
+Name: openSSLLuckyMinus20, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    8406
+ 0.0       8
+-1.0       6
+ 3.0       2
+Name: ticketbleed, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    8299
+ 4.0      43
+ 2.0      38
+ 3.0      34
+ 0.0       7
+-1.0       1
+Name: bleichenbacher, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    7437
+-1.0     917
+ 3.0      67
+ 2.0       1
+Name: zombiePoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    7484
+-1.0     917
+ 5.0      21
+Name: goldenDoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    7459
+-1.0     917
+ 6.0      25
+ 7.0      21
+Name: zeroLengthPaddingOracle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0     7497
+-1.0      917
+ 11.0       8
+Name: sleepingPoodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    8256
+True      165
+Name: poodle, dtype: int64
+Percentage Vulnerable: 0.0
+
+ 1.0    8366
+-3.0      41
+ 0.0       8
+ 2.0       7
+Name: poodleTls, dtype: int64
+Percentage Vulnerable: 0.0
+
+True     6555
+False     223
+Name: fallbackScsv, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    8405
+True       17
+Name: freak, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    8414
+True        8
+Name: logjam, dtype: int64
+Percentage Vulnerable: 0.0
+
+False    8410
+True       12
+Name: drownVulnerable, dtype: int64
+Percentage Vulnerable: 0.0
+
+++++++++++++++++++++++++++++++++++++++++++
+==========================================
