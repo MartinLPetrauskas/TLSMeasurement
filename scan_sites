@@ -3,27 +3,15 @@
 import concurrent.futures
 import ssllabsscanner
 import time
-import sys
 import random
 import csv
+import click
 
-# Check to see if there is an input file, if none, exit program
-if len(sys.argv) < 3:
-    print('Usage: tls_analysis <input txt file> <output csv file>')
-    exit()
+fieldnames = ['host', 'rank', 'industry', 'geoLocation', 'ipAddress', 'grade', 'protocols', 'vulnBeast',
+              'supportsRc4', 'heartbleed', 'heartbeat', 'openSslCcs', 'openSSLLuckyMinus20', 'ticketbleed',
+              'bleichenbacher', 'zombiePoodle', 'goldenDoodle', 'zeroLengthPaddingOracle', 'sleepingPoodle',
+              'poodle', 'poodleTls', 'fallbackScsv', 'freak', 'logjam', 'drownVulnerable']
 
-# Read all the website URLs from the input file
-input_file = open(sys.argv[1], 'r')
-websites = input_file.readlines()
-websites_stripped = list(map(lambda url: url.rstrip(), websites))
-input_file.close()
-
-output_csv_filename = sys.argv[2]
-output_csv = open(output_csv_filename, 'w')
-fieldnames = ['host', 'rank', 'industry', 'geoLocation', 'ipAddress', 'grade', 'protocols', 'vulnBeast', 'supportsRc4', 'heartbleed', 'heartbeat', 'openSslCcs', 'openSSLLuckyMinus20', 'ticketbleed', 'bleichenbacher', 'zombiePoodle', 'goldenDoodle', 'zeroLengthPaddingOracle', 'sleepingPoodle', 'poodle', 'poodleTls', 'fallbackScsv', 'freak', 'logjam', 'drownVulnerable']
-writer = csv.DictWriter(output_csv, fieldnames=fieldnames)
-writer.writeheader()
-output_csv.close()
 
 # CSV FIELD NAMES:
 # - host
@@ -181,11 +169,6 @@ def scanning_func(url):
     except:
         drownVulnerable = 'NA'
 
-
-
-    output_csv = open(output_csv_filename, 'a+')
-    writer = csv.DictWriter(output_csv, fieldnames=fieldnames)
-
     csv_data = {
         'host': host,
         'rank': rank,
@@ -214,22 +197,41 @@ def scanning_func(url):
         'drownVulnerable': drownVulnerable,
     }
 
-    writer.writerow(csv_data)
-
     url = data['host']
     grade = data['endpoints'][0]['gradeTrustIgnored']
     print('SCANNING COMPLETE')
     final = url + ": " + grade
-    return final
+    print(final)
+    return csv_data
 
 
-with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-    future_to_url = {executor.submit(scanning_func, url): url for url in websites_stripped}
-    for future in concurrent.futures.as_completed(future_to_url):
-        url = future_to_url[future]
-        try:
-            data = future.result()
-        except Exception as exc:
-            print('Exception has been thrown: ' + str(exc))
-        else:
-            print('RESULT: ' + data)
+@click.command()
+@click.argument('inputfile')
+@click.argument('outputfile')
+def main(inputfile, outputfile):
+    input_file = open(inputfile, 'r')
+    websites = input_file.readlines()
+    websites_stripped = list(map(lambda url: url.rstrip(), websites))
+    input_file.close()
+
+    output_csv = open(outputfile, 'w')
+    writer = csv.DictWriter(output_csv, fieldnames=fieldnames)
+    writer.writeheader()
+    output_csv.close()
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+        future_to_url = {executor.submit(scanning_func, url): url for url in websites_stripped}
+        for future in concurrent.futures.as_completed(future_to_url):
+            try:
+                data = future.result()
+                output_csv = open(outputfile, 'a+')
+                writer = csv.DictWriter(output_csv, fieldnames=fieldnames)
+                writer.writerow(data)
+                output_csv.close()
+            except Exception as exc:
+                print('Exception has been thrown: ' + str(exc))
+            else:
+                print('RESULT: ' + str(data))
+
+
+main()
