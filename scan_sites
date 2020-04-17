@@ -197,10 +197,8 @@ def scanning_func(url):
         'drownVulnerable': drownVulnerable,
     }
 
-    url = data['host']
-    grade = data['endpoints'][0]['gradeTrustIgnored']
     print('SCANNING COMPLETE')
-    final = url + ": " + grade
+    final = url_rank[1] + ": " + grade
     print(final)
     return csv_data
 
