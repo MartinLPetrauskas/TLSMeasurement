@@ -6,6 +6,7 @@ import time
 import random
 import csv
 import click
+import requests
 
 fieldnames = ['host', 'rank', 'industry', 'geoLocation', 'ipAddress', 'grade', 'protocols', 'vulnBeast',
               'supportsRc4', 'heartbleed', 'heartbeat', 'openSslCcs', 'openSSLLuckyMinus20', 'ticketbleed',
@@ -42,9 +43,20 @@ fieldnames = ['host', 'rank', 'industry', 'geoLocation', 'ipAddress', 'grade', '
 
 
 def scanning_func(url):
-    url_rank = url.split(',')
-    wait = random.randint(0, 60)
+    wait = random.randint(0, 300)
     time.sleep(wait)
+    try:
+        response = requests.get('https://api.ssllabs.com/api/v3/info')
+        response_data = response.json()
+    except:
+        a = scanning_func(url)
+        return a
+    availableAssessments = response_data['maxAssessments'] - response_data['currentAssessments']
+    if availableAssessments <= 1:
+        a = scanning_func(url)
+        return a
+
+    url_rank = url.split(',')
     print('STARTING TLS SCAN FOR: ' + url_rank[1])
     data = ssllabsscanner.newScan(url_rank[1])
 
@@ -217,7 +229,7 @@ def main(inputfile, outputfile):
     writer.writeheader()
     output_csv.close()
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=25) as executor:
         future_to_url = {executor.submit(scanning_func, url): url for url in websites_stripped}
         for future in concurrent.futures.as_completed(future_to_url):
             try:
