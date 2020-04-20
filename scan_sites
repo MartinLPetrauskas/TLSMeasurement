@@ -7,6 +7,7 @@ import random
 import csv
 import click
 import requests
+import subprocess
 
 fieldnames = ['host', 'rank', 'industry', 'geoLocation', 'ipAddress', 'grade', 'protocols', 'vulnBeast',
               'supportsRc4', 'heartbleed', 'heartbeat', 'openSslCcs', 'openSSLLuckyMinus20', 'ticketbleed',
@@ -42,6 +43,21 @@ fieldnames = ['host', 'rank', 'industry', 'geoLocation', 'ipAddress', 'grade', '
 # - drownVulnerable
 
 
+def get_geolocation(host):
+    """
+    This function will get the GeoLocation of the given host
+    :param host: hostname (i.e. example.com)
+    :return: String with the properly formatted country (i.e. US, United States)
+    """
+    out = subprocess.Popen(['geoiplookup', host], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout, stderr = out.communicate()
+    country = stdout.decode('utf-8').split(': ')[1].rstrip()
+    if 'can\'t resolve hostname' in country:
+        return None
+    else:
+        return country
+
+
 def scanning_func(url):
     wait = random.randint(0, 300)
     time.sleep(wait)
@@ -74,7 +90,11 @@ def scanning_func(url):
     except:
         rank = 'NA'
     industry = 'NA'
-    geoLocation = 'NA'
+
+    try:
+        geoLocation = get_geolocation(host)
+    except:
+        geoLocation = 'NA'
 
     try:
         ipAddress = data['endpoints'][0]['ipAddress']
