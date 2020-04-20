@@ -12,6 +12,7 @@ The main focus of this study is seeing the overall grade for websites, the proto
 
 ## File Overview:
 * **top-1m.csv**: Top 1 million websites, retrieved from https://tranco-list.eu/ on March 4, 2020
+* **top-1m-4-16-20.csv**: Top 1 million websites, retrieved from https://tranco-list.eu/ on April 16, 2020
 * **1-10000.csv**: CSV file which contains all results for this project
 * **ssllabsscanner.py**: Defines functions which call the SSLLabs API
 * **setup.sh**: Simple Bash script to install necessary programs and packages so that the program can be run on EC2 instances
@@ -23,7 +24,5 @@ The main focus of this study is seeing the overall grade for websites, the proto
 * **TLS Presentation.pdf**: Presentation with all the relevant results
 
 ### TODO:
-* Merge add_geolocation into main tls_analysis functionality
-* Implement click CMD line interface in files where not present
 * Make the output files neater.....
 * Refine industry/sector classifications
