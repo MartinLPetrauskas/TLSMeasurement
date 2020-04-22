@@ -74,7 +74,7 @@ def scanning_func(url):
 
     url_rank = url.split(',')
     print('STARTING TLS SCAN FOR: ' + url_rank[1])
-    data = ssllabsscanner.newScan(url_rank[1])
+    data = ssllabsscanner.scan(url_rank[1], True)
 
     if 'errors' in data.keys():
         print(data)
