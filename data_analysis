@@ -192,16 +192,13 @@ def overall_grades(df, output_file, vuln):
     num_rows = df.shape[0]
     output_file.write('Number of URLs Analyzed: ' + str(num_rows) + '\n')
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
-    output_file.write('Overall Grades:\n')
-    output_file.write(str(df.grade.value_counts()) + '\n')
+    output_file.write('Overall Grades:\n' + str(df.grade.value_counts(normalize=True)) + '\n')
     if vuln:
         for index, row in df.iterrows():
             if row.grade == 'F':
                 output = 'Website: ' + row.host + ', Grade: ' + row.grade + '\n'
                 output_file.write(output)
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
-    # overall grade counts that goes to STDOUT
-    print(df.grade.value_counts())
 
 
 def tls_support(df, output_file, vuln):
