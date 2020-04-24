@@ -209,6 +209,7 @@ def tls_support(df, output_file, vuln):
     @param output_file: file descriptor of the output file
     @return: None
     """
+    num_rows = df.shape[0]
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
     output_file.write('TLS Protocols Supported:\n')
     # overall tls support count
@@ -305,28 +306,25 @@ def tls_support(df, output_file, vuln):
             else:
                 print('UNKNOWN PROTOCOL ID: ')
                 print(protocol['id'])
-    output_file.write(str(tls_support) + '\n')
-    output_file.write('Number of sites that support SSL: ' + str(ssl_support_num) + '\n')
-    output_file.write('Number of sites that support TLS v1.0 or v1.1: ' + str(tls_bad_num) + '\n')
-    output_file.write('Number of sites that support TLS: ' + str(tls_overall_num) + '\n')
-    output_file.write('Number of sites that support max SSL v2.0: ' + str(max_ssl2) + '\n')
-    output_file.write('Number of sites that support max SSL v3.0: ' + str(max_ssl3) + '\n')
-    output_file.write('Number of sites that support max TLS v1.0: ' + str(max_tls_10) + '\n')
-    output_file.write('Number of sites that support max TLS v1.1: ' + str(max_tls_11) + '\n')
-    output_file.write('Number of sites that support max TLS v1.2: ' + str(max_tls_12) + '\n')
-    output_file.write('Number of sites that support max TLS v1.3: ' + str(max_tls_13) + '\n')
+    output_file.write('Number of sites that support SSL: ' + str(ssl_support_num) + ' ('
+                      + str(round(ssl_support_num / num_rows * 100, 4)) + '%)\n')
+    output_file.write('Number of sites that support TLS v1.0 or v1.1: ' + str(tls_bad_num) + ' ('
+                      + str(round(tls_bad_num / num_rows * 100, 4)) + '%)\n')
+    output_file.write('Number of sites that support TLS: ' + str(tls_overall_num) + ' (' +
+                      str(round(tls_overall_num / num_rows * 100, 4)) + '%)\n')
+    output_file.write('Number of sites that support max SSL v2.0: ' + str(max_ssl2) + ' (' +
+                      str(round(max_ssl2 / num_rows * 100, 4)) + '%)\n')
+    output_file.write('Number of sites that support max SSL v3.0: ' + str(max_ssl3) + ' (' +
+                      str(round(max_ssl3 / num_rows * 100, 4)) + '%)\n')
+    output_file.write('Number of sites that support max TLS v1.0: ' + str(max_tls_10) + ' (' +
+                      str(round(max_tls_10 / num_rows * 100, 4)) + '%)\n')
+    output_file.write('Number of sites that support max TLS v1.1: ' + str(max_tls_11) + ' (' +
+                      str(round(max_tls_11 / num_rows * 100, 4)) + '%)\n')
+    output_file.write('Number of sites that support max TLS v1.2: ' + str(max_tls_12) + ' (' +
+                      str(round(max_tls_12 / num_rows * 100, 4)) + '%)\n')
+    output_file.write('Number of sites that support max TLS v1.3: ' + str(max_tls_13) + ' (' +
+                      str(round(max_tls_13 / num_rows * 100, 4)) + '%)\n')
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
-    # overall counts go to STDOUT
-    print(tls_support)
-    print('Number of sites that support SSL: ' + str(ssl_support_num))
-    print('Number of sites that support TLS v1.0 or v1.1: ' + str(tls_bad_num))
-    print('Number of sites that support TLS: ' + str(tls_overall_num))
-    print('Number of sites that support max SSL v2.0: ' + str(max_ssl2))
-    print('Number of sites that support max SSL v3.0: ' + str(max_ssl3))
-    print('Number of sites that support max TLS v1.0: ' + str(max_tls_10))
-    print('Number of sites that support max TLS v1.1: ' + str(max_tls_11))
-    print('Number of sites that support max TLS v1.2: ' + str(max_tls_12))
-    print('Number of sites that support max TLS v1.3: ' + str(max_tls_13))
 
 
 def vulnerability_count(row):
