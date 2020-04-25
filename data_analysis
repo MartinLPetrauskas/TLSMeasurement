@@ -373,22 +373,9 @@ def vulnerability_report(df, output_file, vuln):
     # first iterate through all the sites and add vulnerable sites to the output file
     num_vulnerable_sites = 0
     # count the number sites for each vulnerability
-    rc4_support_num = 0
-    heartbleed_num = 0
-    opensslccs_num = 0
-    opensslluckminus20_num = 0
-    ticketbleed_num = 0
-    bleichenbacher_num = 0
-    zombiepoodle_num = 0
-    goldendoodle_num = 0
-    zerolengthpaddingoracle_num = 0
-    sleepingpoddle_num = 0
-    poodle_num = 0
-    poodletls_num = 0
-    fallback_num = 0
-    freak_num = 0
-    logjam_num = 0
-    drown_num = 0
+    rc4_support_num = heartbleed_num = opensslccs_num = opensslluckminus20_num = ticketbleed_num = bleichenbacher_num \
+        = zombiepoodle_num = goldendoodle_num = zerolengthpaddingoracle_num = sleepingpoddle_num = poodle_num \
+        = poodletls_num = fallback_num = freak_num = logjam_num = drown_num = 0
     if vuln:
         for index, row in df.iterrows():
             if vulnerability_count(row):
@@ -506,26 +493,6 @@ def vulnerability_report(df, output_file, vuln):
     output_file.write(str(df.logjam.value_counts()) + '\nPercentage Vulnerable: ' + vulnerability_percentage(logjam_num, total_sites) + '\n\n')
     output_file.write(str(df.drownVulnerable.value_counts()) + '\nPercentage Vulnerable: ' + vulnerability_percentage(drown_num, total_sites) + '\n\n')
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
-    # output vulnerability stats to STDOUT
-    print('Number of vulnerable sites: ' + str(num_vulnerable_sites))
-    # print(df.vulnBeast.value_counts())
-    print(df.supportsRc4.value_counts())
-    print(df.heartbleed.value_counts())
-    print(df.heartbeat.value_counts())
-    print(df.openSslCcs.value_counts())
-    print(df.openSSLLuckyMinus20.value_counts())
-    print(df.ticketbleed.value_counts())
-    print(df.bleichenbacher.value_counts())
-    print(df.zombiePoodle.value_counts())
-    print(df.goldenDoodle.value_counts())
-    print(df.zeroLengthPaddingOracle.value_counts())
-    print(df.sleepingPoodle.value_counts())
-    print(df.poodle.value_counts())
-    print(df.poodleTls.value_counts())
-    print(df.fallbackScsv.value_counts())
-    print(df.freak.value_counts())
-    print(df.logjam.value_counts())
-    print(df.drownVulnerable.value_counts())
 
 
 @click.command()
