@@ -228,15 +228,8 @@ def tls_support(df, output_file, vuln):
         'TLS v1.2': 0,
         'TLS v1.3': 0,
     }
-    ssl_support_num = 0
-    tls_overall_num = 0
-    tls_bad_num = 0
-    max_ssl2 = 0
-    max_ssl3 = 0
-    max_tls_10 = 0
-    max_tls_11 = 0
-    max_tls_12 = 0
-    max_tls_13 = 0
+    ssl_support_num = tls_overall_num = tls_bad_num = max_ssl2 = max_ssl3 = max_tls_10 = max_tls_11 = max_tls_12 = \
+        max_tls_13 = 0
     for index, row in df.iterrows():
         protocols = row.protocols
         try:
