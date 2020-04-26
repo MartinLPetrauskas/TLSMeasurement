@@ -215,6 +215,9 @@ def tls_support(df, output_file, vuln):
     @param output_file: file descriptor of the output file
     @return: None
     """
+    if vuln:
+        vuln_report_file = open(VULN_REPORT, 'a+')
+        vuln_report_file.write('Websites which support outdated protocols:\n')
     num_rows = df.shape[0]
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
     output_file.write('SSL/TLS Protocols Supported:\n')
@@ -259,19 +262,19 @@ def tls_support(df, output_file, vuln):
             if max(ids) == 512:
                 max_ssl2 += 1
                 if vuln:
-                    output_file.write('Website: ' + row.host + ', at best only supports SSL v2.0\n')
+                    vuln_report_file.write('Website: ' + row.host + ', at best only supports SSL v2.0\n')
             if max(ids) == 768:
                 max_ssl3 += 1
                 if vuln:
-                    output_file.write('Website: ' + row.host + ', at best only supports SSL v2.0\n')
+                    vuln_report_file.write('Website: ' + row.host + ', at best only supports SSL v2.0\n')
             if max(ids) == 769:
                 max_tls_10 += 1
                 if vuln:
-                    output_file.write('Website: ' + row.host + ', at best only supports TLS v1.0\n')
+                    vuln_report_file.write('Website: ' + row.host + ', at best only supports TLS v1.0\n')
             if max(ids) == 770:
                 max_tls_11 += 1
                 if vuln:
-                    output_file.write('Website: ' + row.host + ', at best only supports TLS v1.1\n')
+                    vuln_report_file.write('Website: ' + row.host + ', at best only supports TLS v1.1\n')
             if max(ids) == 771:
                 max_tls_12 += 1
             if max(ids) == 772:
@@ -281,13 +284,13 @@ def tls_support(df, output_file, vuln):
                 tls_support_stats['SSL v2.0'] += 1
                 if vuln:
                     output = 'Website: ' + row.host + ', supports SSL v2.0\n'
-                    output_file.write(output)
+                    vuln_report_file.write(output)
                 continue
             if protocol['id'] == 768:
                 tls_support_stats['SSL v3.0'] += 1
                 if vuln:
                     output = 'Website: ' + row.host + ', supports SSL v3.0\n'
-                    output_file.write(output)
+                    vuln_report_file.write(output)
                 continue
             if protocol['id'] == 769:
                 tls_support_stats['TLS v1.0'] += 1
