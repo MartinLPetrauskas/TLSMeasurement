@@ -486,7 +486,7 @@ def vulnerability_report(df, output_file, vuln):
 
 @click.command()
 @click.argument('csvfile')
-@click.option('--output', default='results.txt', help='Name of output file for analysis')
+@click.option('--output', default='basic-report.txt', help='Name of output file for analysis')
 @click.option('--all', is_flag=True, help='Analyze all TLS results with no breakdown')
 @click.option('--industry', is_flag=True, help='Analyze the TLS results  via industry')
 @click.option('--geo', is_flag=True, help='Analyze the TLS results via geo-location')
