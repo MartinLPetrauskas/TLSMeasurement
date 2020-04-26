@@ -6,7 +6,7 @@ import math
 import logging
 import click
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 
 COLUMNS = ['host', 'rank', 'industry', 'geoLocation', 'ipAddress', 'grade', 'protocols', 'vulnBeast', 'supportsRc4',
            'heartbleed', 'heartbeat', 'openSslCcs', 'openSSLLuckyMinus20', 'ticketbleed', 'bleichenbacher',
@@ -189,10 +189,12 @@ def overall_grades(df, output_file, vuln):
     @param df: DataFrame object from CSV file
     @param output_file: file descriptor of output file
     """
+    grade_value_counts = str(df.grade.value_counts(normalize=True))
     num_rows = df.shape[0]
     output_file.write('Number of URLs Analyzed: ' + str(num_rows) + '\n')
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
-    output_file.write('Overall Grades:\n' + str(df.grade.value_counts(normalize=True)) + '\n')
+    output_file.write('Overall Grades (Percentages out of 1.0):\n' +
+                      grade_value_counts[:grade_value_counts.rfind('\n')] + '\n')
     if vuln:
         for index, row in df.iterrows():
             if row.grade == 'F':
