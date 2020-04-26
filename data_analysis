@@ -8,6 +8,7 @@ import click
 
 logging.basicConfig(level=logging.DEBUG)
 
+VULN_REPORT = 'vulnerability-report.txt'
 COLUMNS = ['host', 'rank', 'industry', 'geoLocation', 'ipAddress', 'grade', 'protocols', 'vulnBeast', 'supportsRc4',
            'heartbleed', 'heartbeat', 'openSslCcs', 'openSSLLuckyMinus20', 'ticketbleed', 'bleichenbacher',
            'zombiePoodle', 'goldenDoodle', 'zeroLengthPaddingOracle', 'sleepingPoodle', 'poodle', 'poodleTls',
@@ -196,10 +197,13 @@ def overall_grades(df, output_file, vuln):
     output_file.write('Overall Grades (Percentages out of 1.0):\n' +
                       grade_value_counts[:grade_value_counts.rfind('\n')] + '\n')
     if vuln:
+        vuln_report_file = open(VULN_REPORT, 'a+')
+        vuln_report_file.write('Websites with bad grades (F):\n')
         for index, row in df.iterrows():
             if row.grade == 'F':
                 output = 'Website: ' + row.host + ', Grade: ' + row.grade + '\n'
-                output_file.write(output)
+                vuln_report_file.write(output)
+        vuln_report_file.close()
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
 
 
@@ -502,10 +506,17 @@ def main(csvfile, output, all, industry, geo, log, vuln):
     df = df[df.geoLocation.notnull()]
     df = df[df.ipAddress.notnull()]
     df = df[df.protocols.notnull()]
+
+    time = str(datetime.datetime.now())
     # write some basic information to output file
     output_file = open(output, 'w+')
     output_file.write('Results for TLS Analysis:\n')
-    output_file.write('Analysis run at: ' + str(datetime.datetime.now()) + '\n')
+    output_file.write('Analysis run at: ' + time + '\n')
+
+    vuln_report_file = open(VULN_REPORT, 'w+')
+    vuln_report_file.write('Vulnerability Report:\n')
+    vuln_report_file.write('Generated at: ' + time + '\n')
+    vuln_report_file.close()
     if all is True:
         output_file.write('==========================================\n')
         output_file.write('Regular Analysis\n')
