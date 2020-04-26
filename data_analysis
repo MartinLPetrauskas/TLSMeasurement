@@ -213,7 +213,7 @@ def tls_support(df, output_file, vuln):
     """
     num_rows = df.shape[0]
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
-    output_file.write('TLS Protocols Supported:\n')
+    output_file.write('SSL/TLS Protocols Supported:\n')
     # overall tls support count
     # id mappings:
     # 512 -> SSL v2.0
@@ -222,7 +222,7 @@ def tls_support(df, output_file, vuln):
     # 770 -> TLS v1.1
     # 771 -> TLS v1.2
     # 772 -> TLS v1.3
-    tls_support = {
+    tls_support_stats = {
         'SSL v2.0': 0,
         'SSL v3.0': 0,
         'TLS v1.0': 0,
@@ -236,10 +236,9 @@ def tls_support(df, output_file, vuln):
         protocols = row.protocols
         try:
             protocols_json = protocols.replace("\'", "\"")
-        except:
+        except Exception as exc:
             # NOTE: exceptions will be thrown if the protocols is a nan (i.e. for those sites that couldn't be scanned)
-            logging.debug(row)
-            logging.debug(math.isnan(protocols))
+            logging.debug(exc)
             logging.debug(protocols)
         protocols_list = json.loads(protocols_json)
         # This block of if statements gets a combined count for SSL/TLS
@@ -275,28 +274,28 @@ def tls_support(df, output_file, vuln):
                 max_tls_13 += 1
         for protocol in protocols_list:
             if protocol['id'] == 512:
-                tls_support['SSL v2.0'] += 1
+                tls_support_stats['SSL v2.0'] += 1
                 if vuln:
                     output = 'Website: ' + row.host + ', supports SSL v2.0\n'
                     output_file.write(output)
                 continue
             if protocol['id'] == 768:
-                tls_support['SSL v3.0'] += 1
+                tls_support_stats['SSL v3.0'] += 1
                 if vuln:
                     output = 'Website: ' + row.host + ', supports SSL v3.0\n'
                     output_file.write(output)
                 continue
             if protocol['id'] == 769:
-                tls_support['TLS v1.0'] += 1
+                tls_support_stats['TLS v1.0'] += 1
                 continue
             if protocol['id'] == 770:
-                tls_support['TLS v1.1'] += 1
+                tls_support_stats['TLS v1.1'] += 1
                 continue
             if protocol['id'] == 771:
-                tls_support['TLS v1.2'] += 1
+                tls_support_stats['TLS v1.2'] += 1
                 continue
             if protocol['id'] == 772:
-                tls_support['TLS v1.3'] += 1
+                tls_support_stats['TLS v1.3'] += 1
                 continue
             else:
                 print('UNKNOWN PROTOCOL ID: ')
