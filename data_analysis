@@ -380,10 +380,6 @@ def vulnerability_report(df, output_file, vuln):
         for index, row in df.iterrows():
             if vulnerability_count(row):
                 num_vulnerable_sites += 1
-            # BEAST vulnerability
-            # if row.vulnBeast is True:
-            #    output = 'Website: ' + row.host + ' is vulnerable to the BEAST attack\n'
-            #    output_file.write(output)
             # RC4 support
             if row.supportsRc4 is True:
                 rc4_support_num += 1
