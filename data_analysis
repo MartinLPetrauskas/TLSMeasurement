@@ -327,6 +327,9 @@ def tls_support(df, output_file, vuln):
                       str(round(max_tls_13 / num_rows * 100, 4)) + '%)\n')
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
 
+    if vuln:
+        vuln_report_file.close()
+
 
 def vulnerability_count(row):
     """
@@ -378,100 +381,117 @@ def vulnerability_report(df, output_file, vuln):
         = zombiepoodle_num = goldendoodle_num = zerolengthpaddingoracle_num = sleepingpoddle_num = poodle_num \
         = poodletls_num = fallback_num = freak_num = logjam_num = drown_num = 0
     if vuln:
-        for index, row in df.iterrows():
-            if vulnerability_count(row):
-                num_vulnerable_sites += 1
-            # RC4 support
-            if row.supportsRc4 is True:
-                rc4_support_num += 1
+        vuln_report_file = open(VULN_REPORT, 'a+')
+        vuln_report_file.write('Specific vulnerabilities:\n')
+    for index, row in df.iterrows():
+        if vulnerability_count(row):
+            num_vulnerable_sites += 1
+        # RC4 support
+        if row.supportsRc4 is True:
+            rc4_support_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' supports at least one RC4 cipher suite\n'
-                output_file.write(output)
-            # heartbleed vulnerability
-            if row.heartbleed is True:
-                heartbleed_num += 1
+                vuln_report_file.write(output)
+        # heartbleed vulnerability
+        if row.heartbleed is True:
+            heartbleed_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to the Heartbleed attack\n'
-                output_file.write(output)
-            # opensslccs vulnerability (CVE-2014-0224)
-            if row.openSslCcs == 2 or row.openSslCcs == 3:
-                opensslccs_num += 1
+                vuln_report_file.write(output)
+        # opensslccs vulnerability (CVE-2014-0224)
+        if row.openSslCcs == 2 or row.openSslCcs == 3:
+            opensslccs_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to openSSLccs (CVE-2014-0224)\n'
-                output_file.write(output)
-            # opensslluckyminus20 vulnerability (CVE-2016-2107)
-            if row.openSSLLuckyMinus20 == 2:
-                opensslluckminus20_num += 1
+                vuln_report_file.write(output)
+        # opensslluckyminus20 vulnerability (CVE-2016-2107)
+        if row.openSSLLuckyMinus20 == 2:
+            opensslluckminus20_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to openSSLLuckyMinus20 (CVE-2016-2107)\n'
-                output_file.write(output)
-            # ticketbleed vulnerability (CVE-2016-9244)
-            if row.ticketbleed == 2:
-                ticketbleed_num += 1
+                vuln_report_file.write(output)
+        # ticketbleed vulnerability (CVE-2016-9244)
+        if row.ticketbleed == 2:
+            ticketbleed_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to ticketbleed (CVE-2016-9244)\n'
-                output_file.write(output)
-            # The following is a debug for getting sites which returned a 3 for Ticketbleed
-            # TODO: remove once the issue has been resolved with a couple sites returning a 3
-            if row.ticketbleed == 3:
-                output = 'TICKETBLEED DEBUG: ' + row.host + '\n'
-                print(output)
-            # bleichenbacher vulnerability (ROBOT attack)
-            if row.bleichenbacher == 2 or row.bleichenbacher == 3:
-                bleichenbacher_num += 1
+                vuln_report_file.write(output)
+        # The following is a debug for getting sites which returned a 3 for Ticketbleed
+        # TODO: remove once the issue has been resolved with a couple sites returning a 3
+        if row.ticketbleed == 3:
+            output = 'TICKETBLEED DEBUG: ' + row.host + '\n'
+            print(output)
+        # bleichenbacher vulnerability (ROBOT attack)
+        if row.bleichenbacher == 2 or row.bleichenbacher == 3:
+            bleichenbacher_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to ROBOT attack\n'
-                output_file.write(output)
-            # zombiePoodle attack
-            if row.zombiePoodle == 2 or row.zombiePoodle == 3:
-                zombiepoodle_num += 1
+                vuln_report_file.write(output)
+        # zombiePoodle attack
+        if row.zombiePoodle == 2 or row.zombiePoodle == 3:
+            zombiepoodle_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to ZombiePoodle attack\n'
-                output_file.write(output)
-            # goldenDoodle attack
-            if row.goldenDoodle == 4 or row.goldenDoodle == 5:
-                goldendoodle_num += 1
+                vuln_report_file.write(output)
+        # goldenDoodle attack
+        if row.goldenDoodle == 4 or row.goldenDoodle == 5:
+            goldendoodle_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to GoldenDoodle attack\n'
-                output_file.write(output)
-            # zeroLengthPaddingOracle (CVE-2019-1559)
-            if row.zeroLengthPaddingOracle == 6 or row.zeroLengthPaddingOracle == 7:
-                zerolengthpaddingoracle_num += 1
+                vuln_report_file.write(output)
+        # zeroLengthPaddingOracle (CVE-2019-1559)
+        if row.zeroLengthPaddingOracle == 6 or row.zeroLengthPaddingOracle == 7:
+            zerolengthpaddingoracle_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to 0-lengthPaddingOracle attack\n'
-                output_file.write(output)
-            # sleepingPoodle attack
-            if row.sleepingPoodle == 10 or row.sleepingPoodle == 11:
-                sleepingpoddle_num += 1
+                vuln_report_file.write(output)
+        # sleepingPoodle attack
+        if row.sleepingPoodle == 10 or row.sleepingPoodle == 11:
+            sleepingpoddle_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to SleepingPoodle attack\n'
-                output_file.write(output)
-            # poodle attack
-            if row.poodle is True:
-                poodle_num += 1
+                vuln_report_file.write(output)
+        # poodle attack
+        if row.poodle is True:
+            poodle_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to Poodle attack\n'
-                output_file.write(output)
-            # poodleTls
-            if row.poodleTls == 2:
-                poodletls_num += 1
+                vuln_report_file.write(output)
+        # poodleTls
+        if row.poodleTls == 2:
+            poodletls_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to PoodleTLS attack\n'
-                output_file.write(output)
-            # fallbackScsv attack
-            if row.fallbackScsv is False:
-                fallback_num += 1
+                vuln_report_file.write(output)
+        # fallbackScsv attack
+        if row.fallbackScsv is False:
+            fallback_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to downgrade attack\n'
-                output_file.write(output)
-            # freak vulnerability
-            if row.freak is True:
-                freak_num += 1
+                vuln_report_file.write(output)
+        # freak vulnerability
+        if row.freak is True:
+            freak_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to FREAK attack\n'
-                output_file.write(output)
-            # logjam vulnerability
-            if row.logjam is True:
-                logjam_num += 1
+                vuln_report_file.write(output)
+        # logjam vulnerability
+        if row.logjam is True:
+            logjam_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to logjam attack\n'
-                output_file.write(output)
-            # DROWN vulnerability
-            if row.drownVulnerable is True:
-                drown_num += 1
+                vuln_report_file.write(output)
+        # DROWN vulnerability
+        if row.drownVulnerable is True:
+            drown_num += 1
+            if vuln:
                 output = 'Website: ' + row.host + ' is vulnerable to DROWN attack\n'
-                output_file.write(output)
-        output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
-        output_file.write('Number of vulnerable sites: ' + str(num_vulnerable_sites) + '\n')
-        output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
+                vuln_report_file.write(output)
+    output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
+    output_file.write('Number of vulnerable sites: ' + str(num_vulnerable_sites) + '\n')
+    output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
     output_file.write('Vulnerability Statistics:\n')
-    # output_file.write(str(df.vulnBeast.value_counts()) + '\n\n')
     output_file.write(str(df.supportsRc4.value_counts()) + '\nPercentage Vulnerable: ' + vulnerability_percentage(rc4_support_num, total_sites) + '\n\n')
     output_file.write(str(df.heartbleed.value_counts()) + '\nPercentage Vulnerable: ' + vulnerability_percentage(heartbleed_num, total_sites) + '\n\n')
     output_file.write(str(df.heartbeat.value_counts()) + '\n\n')
