@@ -2,7 +2,6 @@
 import datetime
 import pandas as pd
 import json
-import math
 import logging
 import click
 
@@ -420,7 +419,7 @@ def vulnerability_report(df, output_file, vuln):
         # TODO: remove once the issue has been resolved with a couple sites returning a 3
         if row.ticketbleed == 3:
             output = 'TICKETBLEED DEBUG: ' + row.host + '\n'
-            print(output)
+            logging.debug(output)
         # bleichenbacher vulnerability (ROBOT attack)
         if row.bleichenbacher == 2 or row.bleichenbacher == 3:
             bleichenbacher_num += 1
@@ -492,17 +491,27 @@ def vulnerability_report(df, output_file, vuln):
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
     output_file.write('++++++++++++++++++++++++++++++++++++++++++\n')
     output_file.write('Vulnerability Statistics:\n')
-    output_file.write('Heartbleed (CVE-2014-0160) Percentage Vulnerable: ' + vulnerability_percentage(heartbleed_num, total_sites) + '%\n')
-    output_file.write('OpenSSL CCS Injection (CVE-2014-0224) Percentage Vulnerable: ' + vulnerability_percentage(opensslccs_num, total_sites) + '%\n')
-    output_file.write('OpenSSL Lucky Minus 20 (CVE-2016-2107) Percentage Vulnerable: ' + vulnerability_percentage(opensslluckminus20_num, total_sites) + '%\n')
-    output_file.write('Ticketbleed (CVE-2016-9244) Percentage Vulnerable: ' + vulnerability_percentage(ticketbleed_num, total_sites) + '%\n')
-    output_file.write('ROBOT Percentage Vulnerable: ' + vulnerability_percentage(bleichenbacher_num, total_sites) + '%\n')
-    output_file.write('Zombie POODLE Percentage Vulnerable: ' + vulnerability_percentage(zombiepoodle_num, total_sites) + '%\n')
-    output_file.write('GOLDENDOODLE Percentage Vulnerable: ' + vulnerability_percentage(goldendoodle_num, total_sites) + '%\n')
-    output_file.write('0-Length Padding Oracle (CVE-2019-1559) Percentage Vulnerable: ' + vulnerability_percentage(zerolengthpaddingoracle_num, total_sites) + '%\n')
-    output_file.write('Sleeping POODLE Percentage Vulnerable: ' + vulnerability_percentage(sleepingpoddle_num, total_sites) + '%\n')
+    output_file.write('Heartbleed (CVE-2014-0160) Percentage Vulnerable: ' +
+                      vulnerability_percentage(heartbleed_num, total_sites) + '%\n')
+    output_file.write('OpenSSL CCS Injection (CVE-2014-0224) Percentage Vulnerable: ' +
+                      vulnerability_percentage(opensslccs_num, total_sites) + '%\n')
+    output_file.write('OpenSSL Lucky Minus 20 (CVE-2016-2107) Percentage Vulnerable: ' +
+                      vulnerability_percentage(opensslluckminus20_num, total_sites) + '%\n')
+    output_file.write('Ticketbleed (CVE-2016-9244) Percentage Vulnerable: ' +
+                      vulnerability_percentage(ticketbleed_num, total_sites) + '%\n')
+    output_file.write('ROBOT Percentage Vulnerable: ' +
+                      vulnerability_percentage(bleichenbacher_num, total_sites) + '%\n')
+    output_file.write('Zombie POODLE Percentage Vulnerable: ' +
+                      vulnerability_percentage(zombiepoodle_num, total_sites) + '%\n')
+    output_file.write('GOLDENDOODLE Percentage Vulnerable: ' +
+                      vulnerability_percentage(goldendoodle_num, total_sites) + '%\n')
+    output_file.write('0-Length Padding Oracle (CVE-2019-1559) Percentage Vulnerable: ' +
+                      vulnerability_percentage(zerolengthpaddingoracle_num, total_sites) + '%\n')
+    output_file.write('Sleeping POODLE Percentage Vulnerable: ' +
+                      vulnerability_percentage(sleepingpoddle_num, total_sites) + '%\n')
     output_file.write('POODLE Percentage Vulnerable: ' + vulnerability_percentage(poodle_num, total_sites) + '%\n')
-    output_file.write('POODLE TLS Percentage Vulnerable: ' + vulnerability_percentage(poodletls_num, total_sites) + '%\n')
+    output_file.write('POODLE TLS Percentage Vulnerable: ' +
+                      vulnerability_percentage(poodletls_num, total_sites) + '%\n')
     output_file.write('FREAK Percentage Vulnerable: ' + vulnerability_percentage(freak_num, total_sites) + '%\n')
     output_file.write('Logjam Percentage Vulnerable: ' + vulnerability_percentage(logjam_num, total_sites) + '%\n')
     output_file.write('DROWN Percentage Vulnerable: ' + vulnerability_percentage(drown_num, total_sites) + '%\n')
